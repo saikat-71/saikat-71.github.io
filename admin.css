@@ -1,0 +1,67 @@
+.admin-page{min-height:100vh}.admin-wrap{padding-top:125px;padding-bottom:90px}.admin-hero{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:28px}.admin-hero h1{font-size:clamp(42px,6vw,72px);line-height:1.02;letter-spacing:-3px;margin:10px 0}.admin-hero p{max-width:760px;color:var(--muted);line-height:1.75}.admin-status{display:flex;align-items:center;gap:9px;border:1px solid var(--line);background:var(--panel);padding:11px 14px;border-radius:999px;white-space:nowrap;font-size:12px}.admin-status i{font-size:8px;color:#ef4444}.admin-status.connected i{color:#20e3a2}.admin-panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px;margin-bottom:22px;box-shadow:0 18px 55px rgba(0,0,0,.08)}.panel-head,.dashboard-top{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:22px}.panel-head span:first-child,.dashboard-top span{font-size:10px;letter-spacing:2px;color:var(--accent);font-weight:800}.panel-head h2,.dashboard-top h2{margin:5px 0;font-size:26px}.secure-note{font-size:11px;color:var(--muted);display:flex;gap:7px;align-items:center}.form-grid{display:grid;gap:14px}.form-grid.three{grid-template-columns:repeat(3,1fr)}.form-grid.two{grid-template-columns:repeat(2,1fr)}.form-grid label,.editor-form label{display:grid;gap:7px;font-size:11px;font-weight:800;color:var(--muted)}.form-grid input,.editor-form input,.editor-form textarea,.editor-form select{width:100%;border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:12px 13px;font:inherit;font-size:13px;outline:none}.editor-form textarea{min-height:105px;resize:vertical}.form-grid input:focus,.editor-form input:focus,.editor-form textarea:focus,.editor-form select:focus{border-color:var(--accent)}.setup-help{display:flex;gap:9px;align-items:flex-start;color:var(--muted);font-size:11px;line-height:1.65;background:rgba(32,227,162,.05);border:1px solid rgba(32,227,162,.16);padding:12px;border-radius:10px;margin:15px 0}.dashboard-actions{display:flex;gap:9px;flex-wrap:wrap}.admin-tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin:0 -26px 24px;padding:0 26px}.admin-tabs button{border:0;background:transparent;color:var(--muted);padding:12px 15px;font:700 12px Manrope;cursor:pointer;border-bottom:2px solid transparent}.admin-tabs button.active{color:var(--accent);border-bottom-color:var(--accent)}.admin-tab{display:none}.admin-tab.active{display:block}.item-list{display:grid;gap:12px;margin-bottom:18px}.item-card{display:flex;align-items:center;justify-content:space-between;gap:15px;border:1px solid var(--line);background:var(--panel2);border-radius:13px;padding:14px}.item-card-main{min-width:0}.item-card h3{font-size:15px;margin:0 0 4px}.item-card p{font-size:11px;color:var(--muted);margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.item-actions{display:flex;gap:6px;flex-shrink:0}.mini-btn{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:8px;padding:8px 10px;cursor:pointer;font-size:11px}.mini-btn:hover{border-color:var(--accent);color:var(--accent)}.mini-btn.danger:hover{border-color:#ef4444;color:#ef4444}.editor{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--panel2)}.editor h3{margin:0 0 15px}.editor-form{display:grid;gap:13px}.editor-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:5px}.editor-help{font-size:10px;color:var(--muted);line-height:1.6}.file-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end}.file-row .mini-btn{height:43px}.empty{padding:30px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:12px}.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.guide-grid>div{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--panel2)}.guide-grid b{font-size:13px}.guide-grid p{color:var(--muted);font-size:11px;line-height:1.6}.hidden{display:none!important}.toast{position:fixed;right:24px;bottom:24px;z-index:1000;background:#102033;color:#fff;border:1px solid rgba(255,255,255,.12);padding:12px 15px;border-radius:10px;font-size:12px;box-shadow:0 15px 40px rgba(0,0,0,.25);transform:translateY(20px);opacity:0;pointer-events:none;transition:.25s}.toast.show{transform:none;opacity:1}.toast.error{background:#5b1c24}.preview-file{font-size:10px;color:var(--accent);margin-top:5px}@media(max-width:800px){.admin-hero,.panel-head,.dashboard-top{align-items:flex-start;flex-direction:column}.form-grid.three,.form-grid.two,.guide-grid{grid-template-columns:1fr}.admin-panel{padding:20px}.admin-tabs{margin-left:-20px;margin-right:-20px;padding:0 20px}.item-card{align-items:flex-start;flex-direction:column}.item-actions{width:100%}.item-actions button{flex:1}.file-row{grid-template-columns:1fr}.admin-wrap{padding-top:105px}}
+body.light .admin-panel{box-shadow:0 18px 50px rgba(20,40,70,.07)}body.light .admin-status{background:#fff}body.light .admin-tabs button{color:#5b6b80}body.light .admin-tabs button.active{color:#079e72}
+
+/* Admin dashboard interaction fix */
+body.admin-page,body.admin-page *{cursor:auto!important}
+body.admin-page a,body.admin-page button,body.admin-page input,body.admin-page textarea,body.admin-page select{cursor:pointer!important}
+body.admin-page input,body.admin-page textarea,body.admin-page select{cursor:text!important}
+.admin-tabs button{position:relative;z-index:2}
+.research-admin-meta{color:var(--muted);font-size:11px;line-height:1.6}
+
+
+/* Dynamic content spacing: lists and editors grow naturally as items are added. */
+.admin-tab{min-height:0;height:auto;overflow:visible;}
+.item-list{display:grid;grid-auto-rows:auto;gap:12px;margin-bottom:18px;}
+.editor-slot{display:block;margin-top:14px;}
+.admin-panel{height:auto;min-height:0;}
+#tab-research .item-card p{white-space:normal;line-height:1.5;}
+
+/* ===== Admin auto-expanding layout ===== */
+#dashboardPanel,
+#tab-projects,
+#tab-skills,
+#tab-certificates,
+#tab-experience,
+#tab-research,
+.item-list,
+.editor-slot,
+.editor{
+  height:auto;
+  min-height:0;
+  max-height:none;
+  overflow:visible;
+}
+
+#dashboardPanel .admin-tab.active{
+  display:block;
+  width:100%;
+}
+
+.item-list{
+  grid-auto-rows:auto;
+  align-content:start;
+}
+
+.item-card,
+.editor,
+.form-grid,
+.editor-form{
+  min-width:0;
+}
+
+.item-card-main{
+  overflow-wrap:anywhere;
+}
+
+/* ===== UI/UX and mobile refinements ===== */
+.editor{overflow:hidden}.editor-actions{position:sticky;bottom:0;background:linear-gradient(180deg,transparent,var(--panel) 28%);padding-top:18px}.item-actions{flex-wrap:wrap}.admin-tabs{overflow-x:auto;scrollbar-width:thin}.admin-tabs button{white-space:nowrap}.btn,.mini-btn{min-height:40px}.form-grid{min-width:0}.form-grid>*{min-width:0}
+@media(max-width:700px){.admin-wrap{width:min(94%,760px)}.admin-hero{grid-template-columns:1fr!important;gap:16px}.dashboard-top{grid-template-columns:1fr!important;gap:16px}.dashboard-actions{width:100%;display:grid!important;grid-template-columns:1fr}.dashboard-actions .btn{width:100%;justify-content:center}.admin-tabs{gap:7px;padding-bottom:5px}.admin-tabs button{padding:9px 12px}.form-grid.two,.form-grid.three{grid-template-columns:1fr!important}.item-card{align-items:flex-start!important;gap:12px}.item-actions{width:100%;justify-content:flex-start}.editor{padding:16px!important}.editor-actions{display:grid!important;grid-template-columns:1fr 1fr;gap:8px}.editor-actions .btn,.editor-actions .mini-btn{width:100%;justify-content:center}.setup-panel .btn{width:100%;justify-content:center}.secure-note{font-size:10px}.toast{left:12px;right:12px;width:auto!important;bottom:14px}}
+
+/* ===== Admin Theme Button Contrast Fix ===== */
+body.light .admin-page .btn-primary, body.light .admin-page .btn-primary:visited { color:#062218 !important; }
+body.light .admin-page .btn-ghost, body.light .admin-page .btn-ghost:visited { color:#23364d !important; }
+body.light .admin-page .btn-ghost:hover { color:var(--accent) !important; }
+body.light .admin-page .mini-btn { color:#23364d !important; background:#fff; }
+body.light .admin-page .mini-btn:hover { color:var(--accent) !important; }
+body.light .admin-page .admin-tabs button { color:#425268 !important; }
+body.light .admin-page .admin-tabs button.active { color:var(--accent) !important; }

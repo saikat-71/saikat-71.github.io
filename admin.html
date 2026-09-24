@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | Saikat Portfolio</title>
+<link rel="icon" href="images/Favicon.PNG">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-page">
+<header class="header"><nav class="nav container"><a class="brand brand-logo" href="index.html"><img src="images/Logo.png" alt="Saikat"></a><div class="subnav-actions"><button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode"><i class="fa-solid fa-sun"></i></button><a class="btn btn-ghost" href="index.html"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a></div></nav></header>
+<main class="admin-wrap container">
+  <section class="admin-hero"><div><span class="eyebrow">PORTFOLIO CONTROL CENTER</span><h1>Admin <em>Dashboard.</em></h1><p>Update projects, skills, certificates and experience without editing HTML. Changes are published directly to your GitHub Pages repository.</p></div><div class="admin-status" id="status"><i class="fa-solid fa-circle"></i><span>Not connected</span></div></section>
+
+  <section class="admin-panel setup-panel" id="setupPanel">
+    <div class="panel-head"><div><span>STEP 1</span><h2>Connect GitHub</h2></div><span class="secure-note"><i class="fa-solid fa-shield-halved"></i> Token stays in this browser session</span></div>
+    <div class="form-grid three"><label>GitHub username<input id="ghOwner" value="saikat-71"></label><label>Repository<input id="ghRepo" value="saikat-71.github.io"></label><label>Personal Access Token<input id="ghToken" type="password" placeholder="github_pat_..."></label></div>
+    <div class="setup-help"><i class="fa-solid fa-circle-info"></i><span>Use a GitHub fine-grained Personal Access Token with <strong>Contents: Read and write</strong> access to this repository. The token is not saved in localStorage.</span></div>
+    <button class="btn btn-primary" id="connectBtn"><i class="fa-brands fa-github"></i> Connect & Load Data</button>
+  </section>
+
+  <section class="admin-panel hidden" id="dashboardPanel">
+    <div class="dashboard-top"><div><span>STEP 2</span><h2>Manage portfolio</h2><p id="lastUpdated"></p></div><div class="dashboard-actions"><button class="btn btn-ghost" id="exportBtn"><i class="fa-solid fa-download"></i> Export JSON</button><button class="btn btn-primary" id="publishBtn"><i class="fa-solid fa-cloud-arrow-up"></i> Publish Changes</button></div></div>
+    <div class="admin-tabs"><button class="active" data-tab="projects">Projects</button><button data-tab="skills">Skills</button><button data-tab="certificates">Certificates</button><button data-tab="experience">Experience</button><button data-tab="research">Research</button></div>
+    <div id="tab-projects" class="admin-tab active"></div><div id="tab-skills" class="admin-tab"></div><div id="tab-certificates" class="admin-tab"></div><div id="tab-experience" class="admin-tab"></div><div id="tab-research" class="admin-tab"></div>
+  </section>
+
+  <section class="admin-panel hidden" id="guidePanel"><div class="panel-head"><div><span>QUICK GUIDE</span><h2>How it works</h2></div></div><div class="guide-grid"><div><b>1. Connect</b><p>Enter your GitHub token and connect to the portfolio repository.</p></div><div><b>2. Edit</b><p>Add, edit or remove items using the dashboard forms.</p></div><div><b>3. Publish</b><p>Click Publish Changes. GitHub updates the live site automatically after Pages rebuilds.</p></div></div></section>
+</main>
+<div class="toast" id="toast"></div>
+<script src="admin.js"></script>
+</body></html>

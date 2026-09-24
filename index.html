@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Md Sobahan Hasan Saikat — CSE student at AIUB, Data Science and Software Development enthusiast.">
+  <meta name="author" content="Md Sobahan Hasan Saikat">
+  <title>Md Sobahan Hasan Saikat | CSE Student & Developer</title>
+  <link rel="icon" type="image/png" href="images/Favicon.PNG">
+  <link rel="apple-touch-icon" href="images/Favicon.PNG">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div>
+  <div id="preloader"><span></span></div>
+
+  <header class="header">
+    <nav class="nav container">
+      <a class="brand brand-logo" href="#home" aria-label="Saikat home"><img src="images/Logo.png" alt="Saikat logo"></a>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode"><i class="fa-solid fa-sun"></i></button>
+      <button class="menu-toggle" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cv" href="documents/CV.pdf" download>Download CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <div class="availability"><span></span> Open to internships & opportunities</div>
+          <p class="eyebrow">HELLO, I'M</p>
+          <h1>Md Sobahan<br><span>Hasan Saikat</span></h1>
+          <h2><span id="typing"></span><b class="cursor">|</b></h2>
+          <p class="hero-text">
+            A Computer Science & Engineering student at American International University-Bangladesh (AIUB),
+            interested in Data Science, Machine Learning, Software Development and practical technology solutions.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects"><i class="fa-solid fa-code"></i> Explore Projects</a>
+            <a class="btn btn-ghost" href="#research"><i class="fa-solid fa-flask"></i> View Research</a>
+            <a class="btn btn-ghost" href="documents/CV.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+          </div>
+
+          <div class="hero-metrics" aria-label="Portfolio highlights">
+            <div><strong>4+</strong><span>Featured Projects</span></div>
+            <div><strong>2+</strong><span>Research Works</span></div>
+            <div><strong>6</strong><span>Programming Languages</span></div>
+          </div>
+
+          <div class="socials">
+            <a href="https://github.com/saikat-71" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sobahansaikat/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:md.shsaikat71@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+8801751027271" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="profile">
+            <img class="profile-photo" src="images/profile.jpg" alt="Md Sobahan Hasan Saikat profile photo">
+            <div class="profile-caption">
+              <strong>CSE Student</strong>
+              <span>AIUB • Dhaka, Bangladesh</span>
+            </div>
+          </div>
+          <div class="float-card fc-one"><i class="fa-solid fa-chart-line"></i><span>Data Analytics</span></div>
+          <div class="float-card fc-two"><i class="fa-solid fa-code"></i><span>Software Development</span></div>
+          <div class="float-card fc-three"><i class="fa-solid fa-bullhorn"></i><span>Digital Marketing</span></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about"><span>Scroll to explore</span><i class="fa-solid fa-arrow-down"></i></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span>01 / ABOUT</span>
+          <h2>Building skills through <em>learning & projects.</em></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I am <strong>Md Sobahan Hasan Saikat</strong>, a Computer Science & Engineering student at
+              <strong>American International University-Bangladesh (AIUB)</strong>.
+            </p>
+            <p>
+              I am interested in data analytics, programming, machine learning, software development and
+              database systems. I enjoy turning ideas into practical solutions and continuously improving
+              my technical skills through academic and personal projects.
+            </p>
+            <p>
+              I also have professional exposure to graphics and content design and digital marketing.
+              I treat these as supporting skills that complement my technology background rather than as my
+              primary career focus.
+            </p>
+          </div>
+
+          <div class="fact-grid reveal">
+            <div class="fact"><i class="fa-solid fa-graduation-cap"></i><div><small>Education</small><strong>B.Sc. in CSE</strong></div></div>
+            <div class="fact"><i class="fa-solid fa-building-columns"></i><div><small>University</small><strong>AIUB</strong></div></div>
+            <div class="fact"><i class="fa-solid fa-calendar"></i><div><small>Study Period</small><strong>May 2023 – Apr 2027</strong></div></div>
+            <div class="fact"><i class="fa-solid fa-location-dot"></i><div><small>Location</small><strong>Dhaka, Bangladesh</strong></div></div>
+            <div class="fact"><i class="fa-solid fa-envelope"></i><div><small>Email</small><strong>md.shsaikat71@gmail.com</strong></div></div>
+            <div class="fact"><i class="fa-solid fa-phone"></i><div><small>Phone</small><strong>01751027271</strong></div></div>
+          </div>
+        </div>
+
+        <div class="stats-grid reveal" aria-label="Portfolio statistics">
+          <div class="stat"><strong data-count="4">0</strong><span>Featured Projects</span></div>
+          <div class="stat"><strong data-count="10" data-suffix="+">0</strong><span>Tools & Technologies</span></div>
+          <div class="stat"><strong data-count="2">0</strong><span>Professional Roles</span></div>
+          <div class="stat"><strong data-count="85" data-suffix="+">0</strong><span>Research Survey Responses</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span>02 / SKILLS</span>
+          <h2>My technical <em>toolkit.</em></h2>
+          <p>Technology is the main focus; digital marketing and design are additional professional skills.</p>
+        </div>
+
+        <div class="skill-groups">
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Programming</h3>
+            <div class="tags"><span>C++</span><span>Java</span><span>C#</span><span>Python</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-chart-column"></i></div>
+            <h3>Data & Analytics</h3>
+            <div class="tags"><span>Data Analysis</span><span>Data Visualization</span><span>R</span><span>Machine Learning</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Database</h3>
+            <div class="tags"><span>Oracle SQL</span><span>SQL Server</span><span>Database Systems</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Development & Tools</h3>
+            <div class="tags"><span>GitHub</span><span>Microsoft Tools</span><span>Visual Studio</span><span>VS Code</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3>Design & Content</h3>
+            <div class="tags"><span>Canva</span><span>CapCut</span><span>Adobe Photoshop</span><span>Adobe Illustrator</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <h3>Digital Marketing</h3>
+            <div class="tags"><span>Meta</span><span>Social Media</span><span>Content Marketing</span><span>Paid Advertising</span></div>
+            <p class="skill-note">Additional professional skill</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span>03 / PROJECTS</span>
+          <h2>Selected <em>academic projects.</em></h2>
+          <p>Projects from my CSE, data science and software development work.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project reveal">
+            <div class="project-cover"><img src="images/project-bakery.jpg" alt="Bakery Shop Management System project cover"><div class="cover-label">C# / SQL</div></div>
+            <div class="project-top"><span class="project-number">01</span><a href="https://github.com/saikat-71" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></div>
+            <h3>Bakery Shop Management System</h3>
+            <p>A C# WinForms and SQL Server based management system for products, inventory, sales, orders, invoices and user roles.</p>
+            <div class="tags"><span>C#</span><span>WinForms</span><span>SQL Server</span><span>OOP</span></div><div class="project-actions"><a class="project-details" href="project.html?id=bakery">View project details <i class="fa-solid fa-arrow-right"></i></a><a class="report-link" href="documents/bakery-shop-management-report.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> View report PDF</a></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-cover"><img src="images/project-forecasting.jpg" alt="E-Commerce Sales Forecasting project cover"><div class="cover-label">ML / DATA</div></div>
+            <div class="project-top"><span class="project-number">02</span><a href="https://github.com/saikat-71" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></div>
+            <h3>E-Commerce Sales Forecasting</h3>
+            <p>An academic data science project combining e-commerce sales analysis, machine learning forecasting and interactive visualization.</p>
+            <div class="tags"><span>R</span><span>Python</span><span>Random Forest</span><span>XGBoost</span></div><div class="project-actions"><a class="project-details" href="project.html?id=forecasting">View project details <i class="fa-solid fa-arrow-right"></i></a><a class="report-link" href="documents/ecommerce-sales-forecasting-report.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> View report PDF</a></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-cover"><img src="images/project-analytics.jpg" alt="Interactive E-Commerce Sales Analytics project cover"><div class="cover-label">ANALYTICS</div></div>
+            <div class="project-top"><span class="project-number">03</span><a href="https://github.com/saikat-71" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></div>
+            <h3>Interactive E-Commerce Sales Analytics</h3>
+            <p>Analysis of sales trends, customers, regions, products, profit/loss and business factors using data visualization techniques.</p>
+            <div class="tags"><span>Data Analysis</span><span>R</span><span>ggplot2</span><span>Power BI</span></div><div class="project-actions"><a class="project-details" href="project.html?id=analytics">View project details <i class="fa-solid fa-arrow-right"></i></a><a class="report-link" href="documents/ecommerce-sales-analytics-report.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> View report PDF</a></div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-cover"><img src="images/project-ml.jpg" alt="Machine Learning Experiments project cover"><div class="cover-label">MACHINE LEARNING</div></div>
+            <div class="project-top"><span class="project-number">04</span><a href="https://github.com/saikat-71" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></div>
+            <h3>Machine Learning Experiments</h3>
+            <p>Practical experimentation with regression, ensemble learning, model evaluation and clustering techniques for academic work.</p>
+            <div class="tags"><span>Machine Learning</span><span>R</span><span>Python</span><span>K-Means</span></div><div class="project-actions"><a class="project-details" href="project.html?id=ml">View project details <i class="fa-solid fa-arrow-right"></i></a><a class="report-link" href="documents/machine-learning-experiments-report.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> View report PDF</a></div>
+          </article>
+        </div>
+
+        <div class="center reveal github-cta">
+          <a class="btn btn-primary" href="github.html"><i class="fa-brands fa-github"></i> Explore Live GitHub Repositories</a>
+          <p class="skill-note">Live repository data is available on a separate page.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section section-dark">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span>04 / EXPERIENCE</span>
+          <h2>Professional <em>experience.</em></h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">May 2025 – Present</div>
+            <div class="timeline-card">
+              <div class="company-heading"><img src="images/farsight-logo.png" alt="FARSIGHT company logo"><div><h3>Multimedia Designer</h3><h4>FARSIGHT</h4></div></div>
+              <p>Designed graphics and video content for digital campaigns using Canva and Photoshop, including creatives for Meta Ads.</p>
+              <p>Created marketing content and ad creatives and collaborated with the marketing team on campaign materials.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">Apr 2024 – Present</div>
+            <div class="timeline-card">
+              <h3>Digital Marketer</h3>
+              <h4>Professional Experience</h4>
+              <p>Worked with paid advertising campaigns across Facebook, Instagram, Google and LinkedIn, alongside social media marketing and content creation.</p>
+              <p>Used Facebook Ads Manager & Pixel, basic SEO, email/WhatsApp marketing and performance tracking with data analysis.</p>
+            </div>
+          </article>
+        </div>
+        <div class="center reveal">
+          <a class="btn btn-primary" href="experience.html"><i class="fa-solid fa-images"></i> View Previous Work</a>
+          <p class="skill-note">See FARSIGHT work samples and professional experience in detail.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span>05 / EDUCATION</span>
+          <h2>Academic <em>background.</em></h2>
+        </div>
+
+        <div class="education reveal">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div>
+            <div class="edu-date">May 2023 – Apr 2027</div>
+            <h3>B.Sc. in Computer Science & Engineering</h3>
+            <h4>American International University-Bangladesh (AIUB)</h4>
+            <p>Relevant coursework: Process Design, Project Management, Database Systems, Object-Oriented Programming and Data Analysis.</p>
+          </div>
+        </div>
+        <div class="center reveal">
+          <a class="btn btn-ghost" href="education.html"><i class="fa-solid fa-graduation-cap"></i> See More Academic Background</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section section-dark">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span>06 / RESEARCH</span>
+          <h2>Academic <em>research interests.</em></h2>
+        </div>
+
+        <div class="research-list">
+          <article class="research-card reveal">
+            <div class="research-icon"><i class="fa-solid fa-book-open"></i></div>
+            <div><h3>Educational Aspirations and Brain Drain: A Study of Bangladeshi Undergraduate Students' Perspectives</h3><p>Research on the factors influencing Bangladeshi undergraduate students' aspirations to study or build careers abroad, based on a student survey.</p><div class="tags"><span>Survey Research</span><span>Higher Education</span><span>Bangladesh</span><span>Brain Drain</span></div><span class="paper-meta">85+ survey responses • Conference research</span><div class="research-actions"><a class="project-details" href="research.html?id=brain-drain">View research details <i class="fa-solid fa-arrow-right"></i></a><a class="report-link" href="documents/brain-drain-research-report.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> View report PDF</a></div></div>
+          </article>
+          <article class="research-card reveal">
+            <div class="research-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <div><h3>E-Commerce Sales Forecasting Using Machine Learning and Interactive Visualization</h3><p>Academic research work focused on e-commerce sales analysis, machine learning based sales forecasting and interactive visualization for business decision support.</p><div class="tags"><span>Data Science</span><span>Machine Learning</span><span>Sales Forecasting</span><span>E-Commerce</span><span>Visualization</span></div><div class="research-actions"><a class="project-details" href="research.html?id=forecasting">View research details <i class="fa-solid fa-arrow-right"></i></a><a class="report-link" href="documents/ecommerce-sales-forecasting-research-report.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> View report PDF</a></div></div>
+          </article>
+        </div>
+
+        <div class="research-interests reveal">
+          <span>Data Science</span><span>Machine Learning</span><span>Data Analytics</span><span>Software Development</span><span>E-Commerce Analytics</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span>07 / CERTIFICATIONS</span>
+          <h2>Learning & <em>certifications.</em></h2>
+        </div>
+
+        <div class="cert-grid">
+          <article class="certificate reveal"><i class="fa-solid fa-certificate"></i><div><h3>Advanced Digital Marketing</h3><p>Level 1 & Level 2 — Future IT</p><small>References: 222810 / 30180</small><button class="preview-btn" data-title="Advanced Digital Marketing" data-provider="Future IT" data-file="documents/advanced-digital-marketing-advance-digital-marketing-l1-l2-certificate.pdf">Preview</button></div></article>
+          <article class="certificate reveal"><i class="fa-solid fa-award"></i><div><h3>IT Essentials</h3><p>Training — 2023</p><button class="preview-btn" data-title="IT Essentials" data-provider="Training — 2023">Preview</button></div></article>
+          <article class="certificate reveal"><i class="fa-solid fa-palette"></i><div><h3>Creative Content Design Techniques</h3><p>Training — 2024</p><button class="preview-btn" data-title="Creative Content Design Techniques" data-provider="Training — 2024">Preview</button></div></article>
+          <article class="certificate reveal"><i class="fa-solid fa-bullhorn"></i><div><h3>Introduction to Digital Marketing</h3><p>Training — 2024</p><button class="preview-btn" data-title="Introduction to Digital Marketing" data-provider="Training — 2024">Preview</button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="contact-box reveal">
+          <span>08 / CONTACT</span>
+          <h2>Let's connect & <em>build something useful.</em></h2>
+          <p>I am open to collaboration, internships and professional opportunities.</p>
+          <a class="email" href="mailto:md.shsaikat71@gmail.com">md.shsaikat71@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+          <div class="contact-links">
+            <a href="https://github.com/saikat-71" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/sobahansaikat/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="tel:+8801751027271"><i class="fa-solid fa-phone"></i> 01751027271</a>
+          </div>
+
+          <div class="location"><i class="fa-solid fa-location-dot"></i> Bashundhara R/A, Dhaka, Bangladesh</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="certificateModal" class="modal" aria-hidden="true"><div class="modal-backdrop"></div><div class="certificate-preview"><button class="modal-close" aria-label="Close">&times;</button><div class="certificate-sheet"><span class="cert-ribbon">CERTIFICATE</span><div class="cert-seal"><i class="fa-solid fa-award"></i></div><p class="cert-small">CERTIFICATE OF COMPLETION</p><h2 id="modalCertTitle">Certificate</h2><p id="modalCertProvider">Training</p><div class="cert-line"></div><small>Preview generated from portfolio information. The original certificate file remains available in the admin-managed documents.</small></div></div></div>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a class="brand brand-logo footer-logo" href="#home" aria-label="Saikat home"><img src="images/Logo.png" alt="Saikat logo"></a>
+        <p>CSE student and aspiring business/data analyst focused on software, analytics, machine learning and creative digital work.</p>
+      </div>
+      <div class="footer-column"><h4>Quick Links</h4><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="education.html">Education</a><a href="#research">Research</a><a href="#certificates">Certificates</a></div>
+      <div class="footer-column"><h4>Explore</h4><a href="github.html">Live GitHub</a><a href="project.html?id=bakery">Project Details</a><a href="experience.html">FARSIGHT Work</a><a href="documents/CV.pdf" target="_blank">Download CV</a><a href="admin.html">Admin Dashboard</a><a href="#contact">Contact</a></div>
+      <div class="footer-column"><h4>Connect</h4><a href="https://github.com/saikat-71" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a><a href="https://www.linkedin.com/in/sobahansaikat/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a><a href="mailto:md.shsaikat71@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a><div class="footer-social"><a href="https://github.com/saikat-71" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/sobahansaikat/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></div></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="year"></span> Md Sobahan Hasan Saikat. All Rights Reserved.</p><span>Built with HTML, CSS & JavaScript.</span></div>
+  </footer>
+
+  <button id="topBtn" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
+<script src="data/portfolio-loader.js"></script>
+</body>
+</html>
