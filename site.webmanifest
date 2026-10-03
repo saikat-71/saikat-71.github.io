@@ -1,0 +1,23 @@
+{
+  "name": "Md Sobahan Hasan Saikat — Portfolio",
+  "short_name": "Saikat Portfolio",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#070b10",
+  "theme_color": "#070b10",
+  "description": "Portfolio of Md Sobahan Hasan Saikat.",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/favicon.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
