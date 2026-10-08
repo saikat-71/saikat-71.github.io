@@ -463,26 +463,26 @@
       "category": "Undergraduate"
     },
     {
-      "id": "hsc-rcci",
-      "date": "2022",
       "title": "Higher Secondary Certificate (HSC)",
+      "date": "2022",
+      "major": "Science",
+      "category": "HSC",
       "institution": "RCCI Public School and College, Rangpur",
       "icon": "fa-solid fa-school",
       "description": "Completed Higher Secondary education in 2022.",
-      "featured": true,
-      "major": "Science",
-      "category": "HSC"
+      "featured": false,
+      "id": "hsc-rcci"
     },
     {
-      "id": "ssc-rangpur",
-      "date": "2020",
       "title": "Secondary School Certificate (SSC)",
+      "date": "2020",
+      "major": "Science",
+      "category": "SSC",
       "institution": "Collectorate School and College, Rangpur",
       "icon": "fa-solid fa-book",
       "description": "Completed Secondary School education in 2020.",
-      "featured": true,
-      "major": "Science",
-      "category": "SSC"
+      "featured": false,
+      "id": "ssc-rangpur"
     }
   ],
   "certificates": [
