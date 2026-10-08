@@ -1,0 +1,725 @@
+{
+  "version": 5,
+  "site": {
+    "repo": "saikat-71/saikat-71.github.io",
+    "lastUpdated": "2026-10-08",
+    "name": "Md Sobahan Hasan Saikat",
+    "url": "https://saikat-71.github.io/",
+    "analytics": {
+      "provider": "ga4",
+      "measurementId": ""
+    },
+    "seo": {
+      "defaultTitle": "Md Sobahan Hasan Saikat | CSE Student Portfolio",
+      "defaultDescription": "Portfolio of Md Sobahan Hasan Saikat — CSE student at AIUB focused on software development, data analytics, machine learning, research and practical technology projects.",
+      "keywords": "Md Sobahan Hasan Saikat, AIUB, CSE, software development, data analytics, machine learning, research, portfolio",
+      "image": "images/Logo.webp",
+      "locale": "en_US"
+    },
+    "navigation": [
+      {
+        "label": "Home",
+        "href": "index.html#home",
+        "icon": "fa-solid fa-house"
+      },
+      {
+        "label": "About",
+        "href": "index.html#about",
+        "icon": "fa-solid fa-user"
+      },
+      {
+        "label": "Skills",
+        "href": "index.html#skills",
+        "icon": "fa-solid fa-code"
+      },
+      {
+        "label": "Projects",
+        "href": "projects.html",
+        "icon": "fa-solid fa-folder-open"
+      },
+      {
+        "label": "Experience",
+        "href": "experience.html",
+        "icon": "fa-solid fa-briefcase"
+      },
+      {
+        "label": "Education",
+        "href": "education.html",
+        "icon": "fa-solid fa-graduation-cap"
+      },
+      {
+        "label": "Research",
+        "href": "research.html",
+        "icon": "fa-solid fa-flask"
+      },
+      {
+        "label": "Courses",
+        "href": "courses.html",
+        "icon": "fa-solid fa-book-open"
+      },
+      {
+        "label": "Certifications",
+        "href": "certificates.html",
+        "icon": "fa-solid fa-certificate"
+      },
+      {
+        "label": "GitHub",
+        "href": "github.html",
+        "icon": "fa-brands fa-github"
+      },
+      {
+        "label": "Contact",
+        "href": "index.html#contact",
+        "icon": "fa-solid fa-envelope"
+      }
+    ],
+    "pages": {
+      "home": {
+        "title": "Md Sobahan Hasan Saikat | CSE Student Portfolio",
+        "description": "Portfolio of Md Sobahan Hasan Saikat — CSE student at AIUB focused on software development, data analytics, machine learning, research and practical technology projects."
+      },
+      "projects": {
+        "title": "Projects | Md Sobahan Hasan Saikat",
+        "description": "Software, data analytics, machine learning, C# and OpenGL projects by Md Sobahan Hasan Saikat."
+      },
+      "project": {
+        "title": "Project Details | Md Sobahan Hasan Saikat",
+        "description": "Detailed project information, technologies, features and resources."
+      },
+      "experience": {
+        "title": "Experience | Md Sobahan Hasan Saikat",
+        "description": "Professional experience, tools and practical work of Md Sobahan Hasan Saikat."
+      },
+      "education": {
+        "title": "Education | Md Sobahan Hasan Saikat",
+        "description": "Academic background of Md Sobahan Hasan Saikat at AIUB and previous institutions."
+      },
+      "research": {
+        "title": "Academic Research | Md Sobahan Hasan Saikat",
+        "description": "Academic research, methodology, datasets, models and research reports by Md Sobahan Hasan Saikat."
+      },
+      "courses": {
+        "title": "Courses | Md Sobahan Hasan Saikat",
+        "description": "Courses and additional learning completed by Md Sobahan Hasan Saikat."
+      },
+      "certificates": {
+        "title": "Certifications | Md Sobahan Hasan Saikat",
+        "description": "Professional and academic certificates earned by Md Sobahan Hasan Saikat."
+      },
+      "github": {
+        "title": "GitHub | Md Sobahan Hasan Saikat",
+        "description": "GitHub repositories and development activity of Md Sobahan Hasan Saikat."
+      }
+    },
+    "github": "https://github.com/saikat-71",
+    "linkedin": "https://www.linkedin.com/in/sobahansaikat/",
+    "email": "md.shsaikat71@gmail.com",
+    "phone": "+8801751027271",
+    "tagline": "CSE student focused on software, analytics, machine learning and practical technology projects.",
+    "sections": {
+      "education": {
+        "number": "05",
+        "label": "EDUCATION",
+        "title": "Academic background.",
+        "description": "My academic journey from secondary education to undergraduate study.",
+        "moreLabel": "See More Academic Background",
+        "moreHref": "education.html"
+      }
+    }
+  },
+  "skills": [
+    {
+      "id": "programming",
+      "title": "Programming",
+      "icon": "fa-solid fa-code",
+      "skills": [
+        "C++",
+        "Java",
+        "C#",
+        "Python"
+      ],
+      "proficiency": {
+        "C++": 78,
+        "Java": 72,
+        "C#": 88,
+        "Python": 82
+      }
+    },
+    {
+      "title": "Data & Analytics",
+      "icon": "fa-solid fa-chart-column",
+      "skills": [
+        "Data Analysis",
+        "Data Visualization",
+        "R",
+        "Machine Learning",
+        "Power BI"
+      ],
+      "note": "",
+      "id": "data"
+    },
+    {
+      "id": "database",
+      "title": "Database",
+      "icon": "fa-solid fa-database",
+      "skills": [
+        "Oracle SQL",
+        "SQL Server",
+        "Database Systems"
+      ]
+    },
+    {
+      "id": "development",
+      "title": "Development & Tools",
+      "icon": "fa-solid fa-laptop-code",
+      "skills": [
+        "GitHub",
+        "Microsoft Tools",
+        "Visual Studio",
+        "VS Code"
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Design & Content",
+      "icon": "fa-solid fa-pen-ruler",
+      "skills": [
+        "Canva",
+        "CapCut",
+        "Adobe Photoshop",
+        "Adobe Illustrator"
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Digital Marketing",
+      "icon": "fa-solid fa-bullhorn",
+      "skills": [
+        "Meta",
+        "Social Media",
+        "Content Marketing",
+        "Paid Advertising"
+      ],
+      "note": "Additional professional skill"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Bakery Shop Management System",
+      "label": "C# OOP Project",
+      "description": "A C# Windows Forms desktop application that manages bakery inventory, employees, products, customer orders, billing, and sales through role-based dashboards.",
+      "overview": "The Bakery Shop Management System is a database-driven desktop application designed to automate core bakery operations. It provides dedicated interfaces for Admin, Inventory Manager, and Sales Cashier roles, covering employee management, product and stock control, order processing, billing, and sales reporting.",
+      "problem": "Traditional manual bakery management can lead to human errors, expired-item sales, delayed billing, data loss, and difficulty monitoring inventory, staff performance, product availability, and revenue.",
+      "solution": "Developed a centralized C# desktop system with SQL Server to automate user management, inventory control, product management, order processing, billing, and sales reporting. Role-based access ensures that Admin, Inventory Manager, and Sales Cashier each have appropriate system functionality.",
+      "tech": [
+        "C#",
+        "WinForms",
+        "SQL Server",
+        "OOP",
+        "Visual Studio",
+        "CRUD Operations"
+      ],
+      "role": "OOP / Database Management Project",
+      "category": "Desktop Application / Management System",
+      "highlights": [
+        "Role-based authentication and dashboards for Admin, Inventory Manager, and Sales Cashier",
+        "Employee and account management with Insert, Update, Delete, and Search operations",
+        "Product, category, inventory, stock, and expiry-date management",
+        "Shopping cart, order processing, automatic bill calculation, and payment slip generation",
+        "SQL Server database with normalized tables for users, products, categories, invoices, and order details"
+      ],
+      "repo": "https://github.com/saikat-71/BakeryShopManagement_Csharp_OOP2.git",
+      "report": "documents/Bakery_Shop_Management_System_Report.pdf",
+      "cover": "images/projects/BakeryShopManagement.webp",
+      "featured": true,
+      "id": "bakery"
+    },
+    {
+      "title": "Take & Bite Website & Order Management System",
+      "label": "Web Platform & Order Pipeline",
+      "description": "A modern web application and dynamic catalog for a bakery business, integrating automated order tracking and administrative management via Google Apps Script.",
+      "overview": "The Take & Bite project provides a responsive frontend storefront showcasing baked goods, cake varieties (such as jar cakes, tub cakes, and custom cakes), and product specifications. It features a decoupled backend configuration connecting the user interface directly to a Google Apps Script endpoint (Code.gs) for persistent data handling and seamless order processing.   ",
+      "problem": "Small bakery businesses often lack a direct digital catalog with streamlined, low-overhead order collection. Relying on manual customer communication without a centralized web system or administrative interface leads to delayed responses, order tracking errors, and an unpolished customer experience.   ",
+      "solution": "Develop a responsive web application hosting detailed dynamic product categories and visual showcases. Integrate a lightweight, serverless Google Apps Script backend that connects frontend API calls directly to administrative spreadsheets or databases, alongside a dedicated Decap/Netlify-style CMS admin interface (/admin) for content and product management.   ",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Google Apps Script",
+        "Code.gs"
+      ],
+      "role": "Full-Stack Web Development",
+      "category": "Web Application / Business Solutions",
+      "highlights": [
+        "Dynamic multi-category showcase supporting baked cakes, jar cakes, and tub cakes",
+        "Integrated Google Apps Script API configuration (api-config.js) for serverless data flow",
+        "Administrative management setup provided via specialized /admin configuration scripts",
+        "Fully responsive web layout optimized with tailored media assets and Progressive Web App icon sets"
+      ],
+      "repo": "https://github.com/saikat-71/take-and-bite.git",
+      "report": "",
+      "cover": "images/projects/Take_and_Bite.webp",
+      "featured": true,
+      "id": "forecasting"
+    },
+    {
+      "title": "Interactive E-Commerce Sales Analytics Dashboard for Business Decision Making",
+      "label": "E-Commerce Sales Analytics",
+      "description": "A data science project analyzing e-commerce transaction data through exploratory analysis, visualization, sales prediction, profitability analysis, and customer segmentation.",
+      "overview": "Analyzed 5,000 e-commerce transaction records using R to transform raw transaction data into actionable business insights. The project combines data preprocessing, exploratory data analysis, visualization, machine learning-based sales prediction, profit analysis, product performance analysis, and K-Means customer segmentation.",
+      "problem": "Traditional e-commerce analysis may focus mainly on descriptive sales visualization, making it difficult to incorporate sales prediction, customer-level analysis, profitability, product performance, and customer segmentation within one analytical workflow.",
+      "solution": "Prepared and cleaned the transaction dataset, performed exploratory and statistical analysis, engineered business-related features, developed Random Forest and XGBoost regression models for sales prediction, compared model performance, and applied K-Means clustering to identify customer segments.",
+      "tech": [
+        "R",
+        "dplyr",
+        "ggplot2",
+        "readr",
+        "lubridate",
+        "skimr",
+        "corrplot",
+        "Random Forest",
+        "XGBoost",
+        "K-Means Clustering"
+      ],
+      "role": "Academic Data Science Project",
+      "category": "Data Science & Business Analytics",
+      "highlights": [
+        "Analyzed 5,000 e-commerce transaction records",
+        "Built Random Forest and XGBoost models for sales prediction",
+        "Achieved R² of 0.581 with Random Forest",
+        "Applied K-Means clustering to identify 3 customer segments",
+        "Generated business insights on sales, profitability, products, and customer"
+      ],
+      "repo": "https://github.com/saikat-71/Interactive-E-Commerce-Sales-Analytic-Dashboard-for-Business-Decision-Making-.git",
+      "report": "documents/Interactive-E-Commerce-Sales-Analytic-Dashboard-for-Business-Decision-Making.pdf",
+      "cover": "images/projects/Interactive-E-Commerce-Sales-Analytic-Dashboard-for-Business-Decision-Making.webp",
+      "featured": true,
+      "id": "analytics"
+    },
+    {
+      "title": "Delivery Management System",
+      "label": "SRS/Pickers",
+      "description": "A desktop-based Windows Form application designed to streamline, automate, and centralize delivery operations among admins, employees, sellers, carriers, and customers.",
+      "overview": "The Delivery Management System provides a secure, role-based platform that replaces manual paper-based processes and fragmented spreadsheets. By centralizing shipment creation, carrier assignment, route management, payment verification, and real-time package tracking, the application connects all key stakeholders in a unified workflow to increase operational efficiency and user satisfaction.",
+      "problem": "Small and medium-sized businesses frequently rely on manual methods (paper records, phone calls, spread sheets) to manage logistics, leading to human errors, misplaced delivery documents, inaccurate updates, delayed payments, and confused multi-user communication.",
+      "solution": "A role-based desktop management platform utilizing a centralized database where each user type (Admin, Employee, Seller, Carrier, Customer) gets a personalized dashboard to manage shipments, track statuses, handle payments, and resolve complaints efficiently. The software development follows the Extreme Programming (XP) Agile model to accommodate requirement changes and support continuous feedback through iterative release cycles.",
+      "tech": [
+        "Framework",
+        "Design & Prototyping",
+        "Database & Storage",
+        "Version Control & Collaboration"
+      ],
+      "role": "Desktop Application SRS, Architecture Design & Software Testing",
+      "category": "Logistics, Supply Chain & Delivery Management System ",
+      "highlights": [
+        "Built as a Windows Form desktop application following the Extreme Programming (XP) Agile methodology.",
+        "Implements Role-Based Access Control (RBAC) across 5 distinct user roles (Admin, Employee, Seller, Carrier, Customer).",
+        "Provides real-time shipment status tracking and instant automated customer notifications.",
+        "Streamlines daily operations with carrier auto-assignment, delivery route management, and payment verification.",
+        "Includes a fully trace-mapped SRS, requirements matrix, UML diagrams (Use Case, Class, Activity), and Git workflow logs.",
+        "Validated through 30 executed black-box test cases covering authentication, UI functionality, edge inputs, and role permissions."
+      ],
+      "repo": "https://github.com/saikat-71/Delivery-Management-System.git",
+      "report": "documents/Delivery_Management_System.pdf",
+      "cover": "images/projects/Delivery-Management-System.webp",
+      "featured": false,
+      "id": "ml"
+    },
+    {
+      "title": "Interactive Animated Environment Using OpenGL",
+      "label": "OpenGL Graphics Project",
+      "description": "An interactive C++ and OpenGL graphics application featuring animated airport, railway, and city environments with dynamic weather, day/night transitions, and moving objects.",
+      "overview": "This project is an interactive computer graphics application developed using C++ and OpenGL/FreeGLUT. It demonstrates fundamental 2D computer graphics concepts through multiple animated environmental scenes, including an airport, railway landscape, and city environment. The application combines geometric object modeling, transformations, animation, scene switching, environmental effects, and keyboard-based interaction.",
+      "problem": "The project was developed to demonstrate practical understanding of computer graphics fundamentals by constructing complete visual environments programmatically rather than relying on pre-designed graphical assets.",
+      "solution": "The application builds each environment using OpenGL primitives such as polygons, lines, points, circles, triangles, and quadrilaterals. Objects are organized into reusable drawing functions, while timer-based updates control movement and animation. Keyboard controls allow users to switch scenes, change day/night conditions, enable weather effects, pause/resume animation, and adjust animation speed.",
+      "tech": [
+        "C++",
+        "OpenGL",
+        "GLUT",
+        "Code::Blocks",
+        "2D Transformations & Animation"
+      ],
+      "role": "Academic Computer Graphics Project",
+      "category": "Computer Graphics & Interactive Visualization",
+      "highlights": [
+        "Developed interactive airport, railway, and city environments using OpenGL",
+        "Implemented real-time animation for aircraft, trains, vehicles, clouds, and other scene elements",
+        "Added interactive day/night transitions with dynamic environmental effects",
+        "Implemented animated rain, snow, stars, lighting, and other visual effects",
+        "Added keyboard-based controls for scene switching, animation speed, and pause/resume"
+      ],
+      "repo": "https://github.com/saikat-71/Computer-Graphics-Project-AIUB.git",
+      "report": "",
+      "cover": "images/projects/interactive-animated-environment-using-opengl-opengl-animated-environment.webp",
+      "featured": false,
+      "id": "interactive-animated-environment-using-opengl-muy4355v"
+    },
+    {
+      "title": "Movie Management System",
+      "label": "JAVA PROJECT",
+      "description": "A Java-based desktop movie management application with user registration, authentication, movie search, purchase, wallet, and movie management features.",
+      "overview": "AIUB Cineplex is a desktop application developed using Java Swing that simulates a simple movie management and purchasing system. Users can create accounts, log in using their student ID, browse available movies, search for specific titles, purchase movies, manage their movie wallet, and remove purchased movies.",
+      "problem": "The project was developed to demonstrate how a Java desktop application can manage user accounts and provide an interactive movie-management workflow using object-oriented programming, file-based data storage, and graphical user interfaces.",
+      "solution": "The system uses a Java Swing-based multi-screen interface connected through a centralized UserService. User information is stored in a local text file, while authenticated users can interact with available movies through search, purchase, wallet, and deletion features.",
+      "tech": [
+        "Java",
+        "Java Swing",
+        "Object-Oriented Programming (OOP)",
+        "File I/O",
+        "Event-Driven Programming"
+      ],
+      "role": "Java Desktop Application",
+      "category": "Desktop Application · Java · Movie Management System",
+      "highlights": [
+        "User registration and student ID-based authentication",
+        "Interactive Java Swing graphical user interface",
+        "Movie search, selection, and purchase functionality",
+        "Personal movie wallet with add and delete management",
+        "File-based user data persistence using Java File I/O"
+      ],
+      "repo": "https://github.com/saikat-71/Movie-Management-System.git",
+      "report": "",
+      "cover": "images/projects/movie-management-system-movie-management-system.webp",
+      "featured": true,
+      "id": "movie-management-system-muy4l2pi"
+    }
+  ],
+  "experience": [
+    {
+      "id": "farsight-designer",
+      "date": "May 2025 – July 2026",
+      "title": "Content Manager and Multimedia Designer",
+      "company": "FARSIGHT",
+      "logo": "images/farsight-logo.jpg",
+      "description": [
+        "Designed graphics and video content for digital campaigns using Canva and Photoshop, including creatives for Meta Ads.",
+        "Created marketing content and ad creatives and collaborated with the marketing team on campaign materials."
+      ],
+      "previousWorks": [
+        {
+          "title": "FARSIGHT Creative Work 01",
+          "image": "images/farsight/work-01.webp"
+        },
+        {
+          "title": "FARSIGHT Creative Work 02",
+          "image": "images/farsight/work-02.webp"
+        },
+        {
+          "title": "FARSIGHT Creative Work 03",
+          "image": "images/farsight/work-03.webp"
+        },
+        {
+          "title": "FARSIGHT Creative Work 04",
+          "image": "images/farsight/work-04.webp"
+        },
+        {
+          "title": "FARSIGHT Creative Work 05",
+          "image": "images/farsight/work-05.webp"
+        },
+        {
+          "title": "FARSIGHT Creative Work 06",
+          "image": "images/farsight/work-06.webp"
+        },
+        {
+          "title": "FARSIGHT Creative Work 07",
+          "image": "images/farsight/work-07.webp"
+        },
+        {
+          "title": "FARSIGHT Creative Work 08",
+          "image": "images/farsight/work-08.webp"
+        }
+      ],
+      "joiningDate": "May 2025",
+      "endDate": "July 2026",
+      "currentlyWorking": false,
+      "tools": [
+        "Canva",
+        "Adobe Photoshop",
+        "CapCut",
+        "Meta Ads"
+      ],
+      "skills": [
+        "Graphic Design",
+        "Video Editing",
+        "Content Design",
+        "Digital Marketing",
+        "Social Media Design"
+      ],
+      "featured": true,
+      "showLogo": true,
+      "showPreviousWorks": true
+    }
+  ],
+  "education": [
+    {
+      "id": "bsc-aiub",
+      "date": "May 2023 – Apr 2027",
+      "title": "B.Sc. in Computer Science & Engineering",
+      "institution": "American International University-Bangladesh (AIUB)",
+      "icon": "fa-solid fa-graduation-cap",
+      "description": "Relevant coursework: Process Design, Project Management, Database Systems, Object-Oriented Programming and Data Analysis.",
+      "featured": true,
+      "major": "Computer Science & Engineering",
+      "category": "Undergraduate"
+    },
+    {
+      "id": "hsc-rcci",
+      "date": "2022",
+      "title": "Higher Secondary Certificate (HSC)",
+      "institution": "RCCI Public School and College, Rangpur",
+      "icon": "fa-solid fa-school",
+      "description": "Completed Higher Secondary education in 2022.",
+      "featured": true,
+      "major": "Science",
+      "category": "HSC"
+    },
+    {
+      "id": "ssc-rangpur",
+      "date": "2020",
+      "title": "Secondary School Certificate (SSC)",
+      "institution": "Collectorate School and College, Rangpur",
+      "icon": "fa-solid fa-book",
+      "description": "Completed Secondary School education in 2020.",
+      "featured": true,
+      "major": "Science",
+      "category": "SSC"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Advance Digital Marketing",
+      "provider": " FUTURE IT & LANGUAGE TRAINING INSTITUTE",
+      "date": "2-12-2024",
+      "category": "Digital Marketing",
+      "reference": "222810 / 30180",
+      "credentialUrl": "",
+      "icon": "fa-solid fa-certificate",
+      "file": "documents/advanced-digital-marketing-advance-digital-marketing-l1-l2-certificate.pdf",
+      "featured": true,
+      "id": "advanced-digital-marketing",
+      "preview": "images/certificates/advanced-digital-marketing-preview.jpg"
+    },
+    {
+      "title": "IT Essentials",
+      "provider": "Cisco Networking Academy",
+      "date": "14 August 2023",
+      "category": "IT / Networking / Computer Hardware",
+      "reference": "",
+      "credentialUrl": "",
+      "icon": "fa-solid fa-award",
+      "file": "documents/IT-Essentials.pdf",
+      "featured": true,
+      "id": "it-essentials",
+      "preview": "images/certificates/it-essentials-preview.jpg"
+    }
+  ],
+  "research": [
+    {
+      "title": "Educational Aspirations and Brain Drain: A Study of Bangladeshi Undergraduate Students' Perspectives",
+      "type": "Conference Research",
+      "method": "Questionnaire-based survey research",
+      "dataset": "85+Bangladeshi undergraduate students studying at various public and private universities",
+      "models": "No Machine Learning models were used. The study analyzes qualitative and quantitative survey data to identify trends in students' educational and career choices.",
+      "status": "Completed — presented at the 7th Bangladeshi International Conference on Industrial Engineering and Operations Management (IEOM), Dhaka, Bangladesh, December 21–22, 2024.",
+      "abstract": "This research investigates brain drain among Bangladeshi undergraduate students and examines their perceptions of the local education system, educational opportunities abroad, employability after returning, and quality of life abroad. An online structured survey collected over 90 responses from students at public and private universities. Both qualitative and quantitative data were analyzed to identify trends in students' educational and career choices. The findings indicate that higher academic quality, greater career opportunities, and financial benefits are major reasons students prefer foreign universities. The study suggests improving local education quality, increasing research funding, and aligning academic programs with industry needs to help reduce brain drain.",
+      "problem": "Bangladesh faces challenges in retaining skilled and talented undergraduate students because many students consider studying abroad due to perceived limitations in local education, career opportunities, financial prospects, and quality of life.",
+      "gap": "Bangladesh faces challenges in retaining skilled and talented undergraduate students because many students consider studying abroad due to perceived limitations in local education, career opportunities, financial prospects, and quality of life.",
+      "methodology": "An online structured survey was conducted among Bangladeshi undergraduate students from various public and private universities. More than 90 responses were collected. The collected data included both qualitative and quantitative information, which were analyzed to identify trends related to students' educational aspirations, career choices, perceptions of studying abroad, and factors influencing brain drain.",
+      "results": "The study identified higher academic quality, more career opportunities, and financial gain as major factors influencing students' preference for foreign universities. The findings suggest that improving the quality of local education, increasing research funding, and coordinating academic programs with industry needs could help reduce brain drain and retain talented graduates in Bangladesh.",
+      "tags": [
+        "Brain Drain",
+        "Career Aspirations",
+        "Educational Reform",
+        "Migration",
+        "Bangladesh",
+        "Undergraduate Students",
+        "Higher Education",
+        "International Education",
+        "Student Migration"
+      ],
+      "featured": true,
+      "report": "documents/brain-drain-research-report.pdf",
+      "presentation": "",
+      "id": "brain-drain"
+    },
+    {
+      "title": "E-Commerce Sales Forecasting Using Machine Learning and Interactive Visualization",
+      "type": "Predictive Machine Learning Research",
+      "method": "Quantitative research using historical e-commerce transaction data, data preprocessing, feature engineering, EDA, machine learning model development, evaluation, comparison, and interactive visualization.",
+      "dataset": "Historical e-commerce transactional data containing Order ID, Selling Price, Customer ID, Cost Price, Order Date, Discount, Product, Sales Amount, Region, Stock, Quantity, and Returned Orders.",
+      "models": "Random Forest and XGBoost",
+      "status": "Research / Proposal Project",
+      "abstract": "The research proposes an e-commerce sales forecasting system using machine learning and interactive visualization. Historical transaction data will be cleaned and analyzed through feature engineering and EDA. Random Forest and XGBoost will be developed and compared using MAE, RMSE, and R², with time-series data splitting. The forecasting results will then be integrated into an interactive dashboard for sales, product, regional, customer, profit, discount, and future-sales analysis.",
+      "problem": "E-commerce businesses generate large amounts of transaction and customer data, but sales can vary due to seasonality, prices, discounts, customer preferences, products, and regional factors. Businesses need accurate sales forecasting along with understandable insights into products, customers, regions, profits, discounts, and inventory.",
+      "gap": "Existing work such as Grocast: Interactive Sales Forecasting Dashboard focuses on KPI measurement, trends, and sales performance, but lacks comparison of multiple ML forecasting models, explanation of factors affecting forecasts, integrated product/customer/region/profit analysis, and comprehensive business decision support.",
+      "methodology": "Data Collection → Data Preprocessing → Feature Engineering → EDA → Random Forest & XGBoost → Model Evaluation → Model Comparison → Interactive Dashboard → Business Decision Support. Evaluation will use MAE, RMSE, and R², with time-series splitting for training/testing.",
+      "results": "Actual results are not available yet, because this document is a proposal. The expected results are to identify historical sales patterns, forecast future sales, compare Random Forest and XGBoost, select the superior model, analyze product/region/price/discount/profit patterns, and develop an interactive forecasting dashboard.",
+      "tags": [
+        "E-Commerce",
+        "Sales Forecasting",
+        "Machine Learning",
+        "Random Forest",
+        "XGBoost",
+        "Predictive Analytics",
+        "Interactive Visualization"
+      ],
+      "featured": false,
+      "report": "documents/PDF_E-Commerce_Sales_Forecasting_Using_Machine_Learning_and_Interactive_Visualization.pdf",
+      "presentation": "",
+      "id": "forecasting"
+    }
+  ],
+  "researchInterests": [
+    "Data Science",
+    "Machine Learning",
+    "Data Analytics",
+    "Software Development",
+    "E-Commerce Analytics",
+    "Sales Forecasting",
+    "Interactive Data Visualization",
+    "Business Intelligence",
+    "Predictive Analytics",
+    "Database Systems"
+  ],
+  "about": {
+    "heroName": "Md Sobahan Hasan Saikat",
+    "heroSubtitle": "B.Sc. (Engg.) in CSE• AIUB",
+    "heading": "Building skills through learning & projects.",
+    "paragraphs": [
+      "I am Md Sobahan Hasan Saikat, a Computer Science & Engineering student at American International University-Bangladesh (AIUB).",
+      "I am interested in data analytics, programming, machine learning, software development and database systems. I enjoy turning ideas into practical solutions and continuously improving my technical skills through academic and personal projects.",
+      "I also have professional exposure to graphics and content design and digital marketing. I treat these as supporting skills that complement my technology background rather than as my primary career focus."
+    ],
+    "facts": [
+      {
+        "label": "Education",
+        "value": "B.Sc. (Engg.) in CSE",
+        "icon": "fa-solid fa-graduation-cap"
+      },
+      {
+        "label": "University",
+        "value": "AIUB",
+        "icon": "fa-solid fa-building-columns"
+      },
+      {
+        "label": "Study Period",
+        "value": "May 2023 – Apr 2027",
+        "icon": "fa-solid fa-calendar"
+      },
+      {
+        "label": "Location",
+        "value": "Dhaka, Bangladesh",
+        "icon": "fa-solid fa-location-dot"
+      },
+      {
+        "label": "Email",
+        "value": "md.shsaikat71@gmail.com",
+        "icon": "fa-solid fa-envelope"
+      },
+      {
+        "label": "Phone",
+        "value": "01751027271",
+        "icon": "fa-solid fa-phone"
+      }
+    ],
+    "stats": [
+      {
+        "value": "0",
+        "suffix": "",
+        "label": "Featured Projects",
+        "dynamic": "featuredProjects"
+      },
+      {
+        "value": "0",
+        "suffix": "+",
+        "label": "Tools & Technologies",
+        "dynamic": "tools"
+      },
+      {
+        "value": "0",
+        "suffix": "",
+        "label": "Professional Roles",
+        "dynamic": "experience"
+      },
+      {
+        "value": "85",
+        "suffix": "+",
+        "label": "Research Survey Responses"
+      }
+    ],
+    "heroEyebrow": "HELLO, I'M",
+    "heroRoles": [
+      "CSE Student",
+      "Data Science Enthusiast",
+      "Machine Learning Enthusiast",
+      "Software Developer"
+    ],
+    "heroText": "A Computer Science & Engineering student at American International University-Bangladesh (AIUB), interested in Data Science, Machine Learning, Software Development and practical technology solutions.",
+    "heroAvailability": "Open to internships & opportunities",
+    "heroActions": [
+      {
+        "label": "Explore Projects",
+        "href": "#projects",
+        "icon": "fa-solid fa-code",
+        "style": "primary"
+      },
+      {
+        "label": "View Research",
+        "href": "#research",
+        "icon": "fa-solid fa-flask",
+        "style": "ghost"
+      },
+      {
+        "label": "Download CV",
+        "href": "documents/CV.pdf",
+        "icon": "fa-solid fa-file-arrow-down",
+        "style": "ghost",
+        "download": true
+      }
+    ]
+  },
+  "visibility": {
+    "projects": true,
+    "experience": true,
+    "education": true,
+    "research": true,
+    "certificates": true,
+    "courses": true
+  },
+  "courses": [
+    {
+      "title": "Advance Digital Marketing",
+      "provider": "FUTURE IT & LANGUAGE TRAINING INSTITUTE",
+      "year": "2024",
+      "certificateDate": "02-12-2024",
+      "certificateReference": "222810/30180",
+      "description": "Advance Digital Marketing L1, L2 (Online) is a practical digital marketing course covering essential and advanced techniques for building an online presence, generating leads, running paid advertising campaigns, growing social media platforms, setting up e-commerce stores, freelancing, and implementing SEO strategies. The course also includes hands-on topics such as Facebook Pixel & API, Google Ads, YouTube monetization, Fiverr, Upwork, Shopify, WordPress, and keyword research.",
+      "tools": [
+        "Canva",
+        "LinkedIn",
+        "Shopify",
+        "WordPress",
+        "YouTube",
+        "Facebook Business Manager",
+        "Facebook Ads Manager",
+        "Instagram",
+        "Fiverr",
+        "Google Ads"
+      ],
+      "skills": [
+        "Digital Marketing",
+        "Social Media Marketing",
+        "Lead Generation",
+        "E-commerce Management",
+        "Paid Advertising",
+        "SEO",
+        "Freelancing"
+      ],
+      "certificateFile": "documents/advanced-digital-marketing-advance-digital-marketing-l1-l2-certificate.pdf",
+      "icon": "fa-solid fa-bullhorn",
+      "featured": true,
+      "id": "advance-digital-marketing-l1-l2"
+    }
+  ],
+  "contentSchema": 3
+}

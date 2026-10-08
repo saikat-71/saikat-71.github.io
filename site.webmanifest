@@ -1,0 +1,31 @@
+{
+  "name": "Md Sobahan Hasan Saikat \u2014 Portfolio",
+  "short_name": "Saikat Portfolio",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#070b10",
+  "theme_color": "#070b10",
+  "description": "Portfolio of Md Sobahan Hasan Saikat.",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "scope": "./",
+  "id": "saikat-portfolio",
+  "lang": "en",
+  "dir": "ltr",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ]
+}
