@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=2"><link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png?v=2"><link rel="icon" href="images/favicon.ico?v=2" sizes="any"><link rel="apple-touch-icon" sizes="256x256" href="images/apple-touch-icon.png?v=2">
+<title>Projects | Md Sobahan Hasan Saikat</title>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<script id="theme-bootstrap">(function(){try{var k="saikat-theme",t=localStorage.getItem(k)||localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t="dark";localStorage.setItem(k,t);document.documentElement.dataset.theme=t;document.documentElement.classList.toggle("theme-light-preload",t==="light");}catch(e){}})();</script><link rel="stylesheet" href="style.css"><meta name="description" content="Explore software development, data analytics, machine learning and academic projects by Md Sobahan Hasan Saikat.">
+<meta name="author" content="Md Sobahan Hasan Saikat">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="https://saikat-71.github.io/projects.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Saikat Portfolio">
+<meta property="og:title" content="Projects | Md Sobahan Hasan Saikat">
+<meta property="og:description" content="Explore software development, data analytics, machine learning and academic projects by Md Sobahan Hasan Saikat.">
+<meta property="og:url" content="https://saikat-71.github.io/projects.html">
+<meta property="og:image" content="https://saikat-71.github.io/images/profile.webp">
+<meta property="og:image:alt" content="Md Sobahan Hasan Saikat">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projects | Md Sobahan Hasan Saikat">
+<meta name="twitter:description" content="Explore software development, data analytics, machine learning and academic projects by Md Sobahan Hasan Saikat.">
+<meta name="twitter:image" content="https://saikat-71.github.io/images/profile.webp">
+<link rel="manifest" href="site.webmanifest">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Projects | Md Sobahan Hasan Saikat","description":"Explore software development, data analytics, machine learning and academic projects by Md Sobahan Hasan Saikat.","url":"https://saikat-71.github.io/projects.html","isPartOf":{"@type":"WebSite","name":"Saikat Portfolio","url":"https://saikat-71.github.io/"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Md Sobahan Hasan Saikat","url":"https://saikat-71.github.io/","jobTitle":"CSE Student / Aspiring Data & Business Analyst","email":"mailto:md.shsaikat71@gmail.com","sameAs":["https://github.com/saikat-71","https://www.linkedin.com/in/sobahansaikat/"],"alumniOf":{"@type":"CollegeOrUniversity","name":"American International University-Bangladesh"},"knowsAbout":["Data Analytics","Business Analysis","Python","C++","C#","Java","SQL","Machine Learning","Software Development"]}</script><meta name="theme-color" content="#070b10"><meta name="color-scheme" content="dark light">
+</head>
+<body data-page="projects"><div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div><canvas id="particles" aria-hidden="true"></canvas>
+<!-- Shared header rendered by site-common.js -->
+<main class="section subpage"><div class="container"><div class="section-head center"><span>03A / PROJECTS</span><h1>All <em>projects.</em></h1><p>Browse every project. Explore the complete collection of software, data, and technology projects.</p></div><div id="allProjectsGrid" class="project-grid"></div></div></main>
+<!-- Shared footer rendered by site-common.js -->
+<script>const y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();</script>
+<script>
+const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const categoryFor=p=>p.category||(/analytics|data|forecast/i.test((p.title||'')+' '+(p.role||''))?'Data Analytics':/machine|ml|predict/i.test(p.title||'')?'Machine Learning':/design|graphic/i.test((p.title||'')+' '+(p.role||''))?'Design':'Software Development');
+function renderProjects(items){
+  const root=document.getElementById('allProjectsGrid');if(!root)return;
+  root.innerHTML=(items||[]).map((p,i)=>{
+    const cat=categoryFor(p);
+    return `<article class="project" data-category="${esc(cat)}"><div class="project-cover"><img src="${esc(p.cover||'images/Logo.webp')}" alt="${esc(p.title)} project cover" loading="lazy" decoding="async"><div class="cover-label">${esc(p.label||cat||'PROJECT')}</div></div><div class="project-top"><span class="project-number">${String(i+1).padStart(2,'0')}</span>${p.repo?`<a href="${esc(p.repo)}" target="_blank" rel="noopener" aria-label="Open GitHub"><i class="fa-brands fa-github"></i></a>`:''}</div><h3>${esc(p.title)}</h3><p>${esc(p.description||'')}</p><div class="tags">${(p.tech||[]).map(x=>`<span>${esc(x)}</span>`).join('')}</div><div class="project-actions"><a class="project-details btn btn-primary" href="project.html?id=${encodeURIComponent(p.id)}"><i class="fa-solid fa-arrow-right"></i> View project</a>${p.report?`<a class="report-link" href="${esc(p.report)}" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> Report</a>`:''}</div></article>`;
+  }).join('')||'<div class="collection-empty"><i class="fa-solid fa-folder-open"></i><strong>No projects available</strong><span>Project information will be presented here as the portfolio grows.</span></div>';
+  document.dispatchEvent(new CustomEvent('portfolio:projects-rendered'));
+}
+(async()=>{
+  try{
+    const r=await fetch('data/portfolio.json?ts='+Date.now(),{cache:'no-store'});
+    if(!r.ok)throw new Error('Content is temporarily unavailable');
+    const d=await r.json();
+    renderProjects(Array.isArray(d.projects)?d.projects:[]);
+    document.dispatchEvent(new CustomEvent('portfolio:loaded',{detail:d}));
+  }catch(e){
+    console.error('Portfolio content could not be retrieved.',e);
+    renderProjects([]);
+  }
+})();</script><script src="site-common.js"></script><script src="analytics.js" defer></script><script src="enhancements.js"></script></body></html>

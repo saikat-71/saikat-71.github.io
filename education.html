@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=2"><link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png?v=2"><link rel="icon" href="images/favicon.ico?v=2" sizes="any"><link rel="apple-touch-icon" sizes="256x256" href="images/apple-touch-icon.png?v=2"><title>Education | Md Sobahan Hasan Saikat</title><link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><script id="theme-bootstrap">(function(){try{var k="saikat-theme",t=localStorage.getItem(k)||localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t="dark";localStorage.setItem(k,t);document.documentElement.dataset.theme=t;document.documentElement.classList.toggle("theme-light-preload",t==="light");}catch(e){}})();</script><link rel="stylesheet" href="style.css"><meta name="description" content="Academic background of Md Sobahan Hasan Saikat, B.Sc. in Computer Science and Engineering at AIUB.">
+<meta name="author" content="Md Sobahan Hasan Saikat">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="https://saikat-71.github.io/education.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Saikat Portfolio">
+<meta property="og:title" content="Education | Md Sobahan Hasan Saikat">
+<meta property="og:description" content="Academic background of Md Sobahan Hasan Saikat, B.Sc. in Computer Science and Engineering at AIUB.">
+<meta property="og:url" content="https://saikat-71.github.io/education.html">
+<meta property="og:image" content="https://saikat-71.github.io/images/profile.webp">
+<meta property="og:image:alt" content="Md Sobahan Hasan Saikat">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Education | Md Sobahan Hasan Saikat">
+<meta name="twitter:description" content="Academic background of Md Sobahan Hasan Saikat, B.Sc. in Computer Science and Engineering at AIUB.">
+<meta name="twitter:image" content="https://saikat-71.github.io/images/profile.webp">
+<link rel="manifest" href="site.webmanifest">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Education | Md Sobahan Hasan Saikat","description":"Academic background of Md Sobahan Hasan Saikat, B.Sc. in Computer Science and Engineering at AIUB.","url":"https://saikat-71.github.io/education.html","isPartOf":{"@type":"WebSite","name":"Saikat Portfolio","url":"https://saikat-71.github.io/"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Md Sobahan Hasan Saikat","url":"https://saikat-71.github.io/","jobTitle":"CSE Student / Aspiring Data & Business Analyst","email":"mailto:md.shsaikat71@gmail.com","sameAs":["https://github.com/saikat-71","https://www.linkedin.com/in/sobahansaikat/"],"alumniOf":{"@type":"CollegeOrUniversity","name":"American International University-Bangladesh"},"knowsAbout":["Data Analytics","Business Analysis","Python","C++","C#","Java","SQL","Machine Learning","Software Development"]}</script><meta name="theme-color" content="#070b10"><meta name="color-scheme" content="dark light">
+</head><body data-page="education"><div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div><canvas id="particles"></canvas><!-- Shared header rendered by site-common.js --><main class="section subpage"><div class="container"><div class="section-head center"><span>05 / EDUCATION</span><h1>Academic <em>background.</em></h1><p>My academic journey from secondary education to undergraduate study.</p></div><div id="educationPageList" class="education-list"></div><div class="center"><a class="btn btn-primary magnetic" href="documents/CV.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> View CV</a></div></div></main><!-- Shared footer rendered by site-common.js --><script>
+const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+
+(async()=>{
+  let items=[];
+  try{
+    const r=await fetch('data/portfolio.json?ts='+Date.now(),{cache:'no-store'});
+    if(!r.ok)throw new Error('Content is temporarily unavailable');
+    const d=await r.json();items=Array.isArray(d.education)?d.education:[];
+  }catch(e){console.error('Portfolio content could not be retrieved.',e);}
+  const root=document.getElementById('educationPageList');
+  if(root)root.innerHTML=items.map(e=>{const category=e.category||(/B\.Sc|Bachelor|Undergraduate/i.test(e.title||'')?'Undergraduate':/HSC|Higher Secondary/i.test(e.title||'')?'HSC':'SSC');return `<article class="education" data-category="${esc(category)}"><div class="edu-icon"><i class="${esc(e.icon||'fa-solid fa-graduation-cap')}"></i></div><div><div class="edu-date">${esc(e.date||'')}</div><h3>${esc(e.title||'')}</h3><h4>${esc(e.institution||'')}</h4>${e.major?`<div class="edu-major"><span>Major / Group</span><strong>${esc(e.major)}</strong></div>`:''}<p>${esc(e.description||'')}</p></div></article>`}).join('')||'<div class="collection-empty"><strong>Academic records are currently unavailable.</strong></div>';
+})();
+</script><script src="site-common.js"></script><script src="analytics.js" defer></script><script src="enhancements.js"></script></body></html>
