@@ -980,11 +980,12 @@ body.light .hero-visual .orbit:after{background:#3b82f6;box-shadow:0 0 9px 2px r
   .hero-copy .eyebrow{order:1;margin-bottom:4px;}
   .hero-copy h1{order:2;margin-bottom:8px;}
   .hero-visual{order:3!important;height:clamp(270px,38vh,340px)!important;width:100%;margin:0 auto 2px!important;}
-  .hero-copy h2{order:4;margin:0 0 14px;min-height:30px;}
-  .hero-copy .hero-text{order:5;}
-  .hero-copy .hero-actions{order:6;}
-  .hero-copy .hero-metrics{order:7;}
-  .hero-copy .socials{order:8;}
+  .hero-copy h2{order:4;margin:0 0 4px;min-height:30px;}
+  .hero-subtitle{order:5;margin:0 0 14px!important;}
+  .hero-copy .hero-text{order:6;}
+  .hero-copy .hero-actions{order:7;}
+  .hero-copy .hero-metrics{order:8;}
+  .hero-copy .socials{order:9;}
 }
 
 
