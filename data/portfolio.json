@@ -2,7 +2,7 @@
   "version": 5,
   "site": {
     "repo": "saikat-71/saikat-71.github.io",
-    "lastUpdated": "2026-10-08",
+    "lastUpdated": "2026-10-12",
     "name": "Md Sobahan Hasan Saikat",
     "url": "https://saikat-71.github.io/",
     "analytics": {
@@ -583,7 +583,7 @@
   ],
   "about": {
     "heroName": "Md Sobahan Hasan Saikat",
-    "heroSubtitle": "B.Sc. (Engg.) in CSE• AIUB",
+    "heroSubtitle": "B.Sc. (Engg.) in Computer Science & Engineering",
     "heading": "Building skills through learning & projects.",
     "paragraphs": [
       "I am Md Sobahan Hasan Saikat, a Computer Science & Engineering student at American International University-Bangladesh (AIUB).",
@@ -649,10 +649,9 @@
     ],
     "heroEyebrow": "HELLO, I'M",
     "heroRoles": [
-      "CSE Student",
-      "Data Science Enthusiast",
-      "Machine Learning Enthusiast",
-      "Software Developer"
+      "CSE Undergraduate",
+      "Business &",
+      "Data Analytics Enthusiast"
     ],
     "heroText": "A Computer Science & Engineering student at American International University-Bangladesh (AIUB), interested in Data Science, Machine Learning, Software Development and practical technology solutions.",
     "heroAvailability": "Open to internships & opportunities",
