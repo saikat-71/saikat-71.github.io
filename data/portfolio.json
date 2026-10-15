@@ -2,7 +2,7 @@
   "version": 5,
   "site": {
     "repo": "saikat-71/saikat-71.github.io",
-    "lastUpdated": "2026-10-12",
+    "lastUpdated": "2026-10-15",
     "name": "Md Sobahan Hasan Saikat",
     "url": "https://saikat-71.github.io/",
     "analytics": {
@@ -520,7 +520,7 @@
       "method": "Questionnaire-based survey research",
       "dataset": "85+Bangladeshi undergraduate students studying at various public and private universities",
       "models": "No Machine Learning models were used. The study analyzes qualitative and quantitative survey data to identify trends in students' educational and career choices.",
-      "status": "Completed — presented at the 7th Bangladeshi International Conference on Industrial Engineering and Operations Management (IEOM), Dhaka, Bangladesh, December 21–22, 2024.",
+      "status": "Completed — presented at the 7th Bangladeshi International Conference on Industrial Engineering and Operations Management (IEOM), Dhaka, Bangladesh, December 21–22, 2024. DOI: https://doi.org/10.46254/BA07.20240175",
       "abstract": "This research investigates brain drain among Bangladeshi undergraduate students and examines their perceptions of the local education system, educational opportunities abroad, employability after returning, and quality of life abroad. An online structured survey collected over 90 responses from students at public and private universities. Both qualitative and quantitative data were analyzed to identify trends in students' educational and career choices. The findings indicate that higher academic quality, greater career opportunities, and financial benefits are major reasons students prefer foreign universities. The study suggests improving local education quality, increasing research funding, and aligning academic programs with industry needs to help reduce brain drain.",
       "problem": "Bangladesh faces challenges in retaining skilled and talented undergraduate students because many students consider studying abroad due to perceived limitations in local education, career opportunities, financial prospects, and quality of life.",
       "gap": "Bangladesh faces challenges in retaining skilled and talented undergraduate students because many students consider studying abroad due to perceived limitations in local education, career opportunities, financial prospects, and quality of life.",
@@ -539,7 +539,7 @@
       ],
       "featured": true,
       "report": "documents/brain-drain-research-report.pdf",
-      "presentation": "",
+      "presentation": "documents/brain-drain-research-presentation.png",
       "id": "brain-drain"
     },
     {
