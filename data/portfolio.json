@@ -511,6 +511,30 @@
       "featured": true,
       "id": "it-essentials",
       "preview": "images/certificates/it-essentials-preview.jpg"
+    },
+    {
+      "title": "Banner Design with Canva",
+      "provider": "Ghoori Learning",
+      "date": "August 31, 2023",
+      "category": "Designing",
+      "reference": "GL-02308728108",
+      "credentialUrl": "",
+      "icon": "fa-solid fa-certificate",
+      "file": "documents/banner-design-with-canva-banner-design-with-canva.jpg",
+      "featured": false,
+      "id": "banner-design-with-canva-mv9jsrva"
+    },
+    {
+      "title": "Introduction to Digital Marketing",
+      "provider": "Bohubrihi",
+      "date": "May 29, 2024",
+      "category": "Digital Marketing",
+      "reference": "6656c743726937986928c398",
+      "credentialUrl": "",
+      "icon": "fa-solid fa-certificate",
+      "file": "documents/introduction-to-digital-marketing-introduction-to-digital-marketing.pdf",
+      "featured": false,
+      "id": "introduction-to-digital-marketing-mv9jvr2o"
     }
   ],
   "research": [
@@ -801,7 +825,7 @@
       ],
       "certificateFile": "",
       "icon": "fa-solid fa-graduation-cap",
-      "featured": true,
+      "featured": false,
       "id": "21-days-internship-on-power-bi-mv9ja7f9"
     }
   ],
