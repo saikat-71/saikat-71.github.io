@@ -151,56 +151,64 @@
       "skills": [
         "Data Analysis",
         "Data Visualization",
-        "R",
-        "Machine Learning",
-        "Power BI"
+        "Statistics",
+        "Power BI",
+        "Machine Learning"
       ],
       "note": "",
       "id": "data"
     },
     {
-      "id": "database",
-      "title": "Database",
+      "title": "Database & SQL",
       "icon": "fa-solid fa-database",
       "skills": [
+        "SQL",
         "Oracle SQL",
         "SQL Server",
-        "Database Systems"
-      ]
+        "Database Management"
+      ],
+      "note": "",
+      "id": "database"
     },
     {
-      "id": "development",
       "title": "Development & Tools",
       "icon": "fa-solid fa-laptop-code",
       "skills": [
+        "Git",
         "GitHub",
         "Microsoft Tools",
         "Visual Studio",
         "VS Code"
-      ]
+      ],
+      "note": "",
+      "id": "development"
     },
     {
-      "id": "design",
-      "title": "Design & Content",
+      "title": "Design & Productivity",
       "icon": "fa-solid fa-pen-ruler",
       "skills": [
         "Canva",
         "CapCut",
         "Adobe Photoshop",
-        "Adobe Illustrator"
-      ]
+        "Adobe Illustrator",
+        "Technical Writing",
+        "Documentation",
+        "AI Tools"
+      ],
+      "note": "",
+      "id": "design"
     },
     {
-      "id": "marketing",
-      "title": "Digital Marketing",
+      "title": "Business & Professional Skills",
       "icon": "fa-solid fa-bullhorn",
       "skills": [
-        "Meta",
-        "Social Media",
-        "Content Marketing",
-        "Paid Advertising"
+        "Business Analysis",
+        "Communication",
+        "Critical Thinking",
+        "Project Management"
       ],
-      "note": "Additional professional skill"
+      "note": "Additional professional skill",
+      "id": "marketing"
     }
   ],
   "projects": [
