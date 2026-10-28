@@ -312,34 +312,99 @@
       "liveUrl": ""
     },
     {
-      "title": "Delivery Management System",
-      "label": "SRS/Pickers",
-      "description": "A desktop-based Windows Form application designed to streamline, automate, and centralize delivery operations among admins, employees, sellers, carriers, and customers.",
-      "overview": "The Delivery Management System provides a secure, role-based platform that replaces manual paper-based processes and fragmented spreadsheets. By centralizing shipment creation, carrier assignment, route management, payment verification, and real-time package tracking, the application connects all key stakeholders in a unified workflow to increase operational efficiency and user satisfaction.",
-      "problem": "Small and medium-sized businesses frequently rely on manual methods (paper records, phone calls, spread sheets) to manage logistics, leading to human errors, misplaced delivery documents, inaccurate updates, delayed payments, and confused multi-user communication.",
-      "solution": "A role-based desktop management platform utilizing a centralized database where each user type (Admin, Employee, Seller, Carrier, Customer) gets a personalized dashboard to manage shipments, track statuses, handle payments, and resolve complaints efficiently. The software development follows the Extreme Programming (XP) Agile model to accommodate requirement changes and support continuous feedback through iterative release cycles.",
+      "title": "Movie Management System",
+      "label": "JAVA PROJECT",
+      "description": "A Java-based desktop movie management application with user registration, authentication, movie search, purchase, wallet, and movie management features.",
+      "overview": "AIUB Cineplex is a desktop application developed using Java Swing that simulates a simple movie management and purchasing system. Users can create accounts, log in using their student ID, browse available movies, search for specific titles, purchase movies, manage their movie wallet, and remove purchased movies.",
+      "problem": "The project was developed to demonstrate how a Java desktop application can manage user accounts and provide an interactive movie-management workflow using object-oriented programming, file-based data storage, and graphical user interfaces.",
+      "solution": "The system uses a Java Swing-based multi-screen interface connected through a centralized UserService. User information is stored in a local text file, while authenticated users can interact with available movies through search, purchase, wallet, and deletion features.",
       "tech": [
-        "Framework",
-        "Design & Prototyping",
-        "Database & Storage",
-        "Version Control & Collaboration"
+        "Java",
+        "Java Swing",
+        "Object-Oriented Programming (OOP)",
+        "File I/O",
+        "Event-Driven Programming"
       ],
-      "role": "Desktop Application SRS, Architecture Design & Software Testing",
-      "category": "Logistics, Supply Chain & Delivery Management System ",
+      "role": "Java Desktop Application",
+      "category": "Desktop Application · Java · Movie Management System",
       "highlights": [
-        "Built as a Windows Form desktop application following the Extreme Programming (XP) Agile methodology.",
-        "Implements Role-Based Access Control (RBAC) across 5 distinct user roles (Admin, Employee, Seller, Carrier, Customer).",
-        "Provides real-time shipment status tracking and instant automated customer notifications.",
-        "Streamlines daily operations with carrier auto-assignment, delivery route management, and payment verification.",
-        "Includes a fully trace-mapped SRS, requirements matrix, UML diagrams (Use Case, Class, Activity), and Git workflow logs.",
-        "Validated through 30 executed black-box test cases covering authentication, UI functionality, edge inputs, and role permissions."
+        "User registration and student ID-based authentication",
+        "Interactive Java Swing graphical user interface",
+        "Movie search, selection, and purchase functionality",
+        "Personal movie wallet with add and delete management",
+        "File-based user data persistence using Java File I/O"
       ],
-      "repo": "https://github.com/saikat-71/Delivery-Management-System.git",
-      "report": "documents/Delivery_Management_System.pdf",
-      "cover": "images/projects/Delivery-Management-System.webp",
-      "featured": false,
-      "id": "ml",
+      "repo": "https://github.com/saikat-71/Movie-Management-System.git",
+      "report": "",
+      "cover": "images/projects/movie-management-system-movie-management-system.webp",
+      "featured": true,
+      "id": "movie-management-system-muy4l2pi",
       "liveUrl": ""
+    },
+    {
+      "title": "Job Portal & Recruitment System",
+      "label": "Web Application",
+      "description": "A web portal designed to streamline job searching and candidate recruitment through an organized, multi-user system.",
+      "overview": "The project brings together job seekers and hiring teams on a single online platform. It provides personalized workflows and dedicated tools for four distinct user roles: Admin, Recruiter, Job Seeker, and HR Manager.",
+      "problem": "Job seekers spend significant time searching across multiple sources, while employers encounter delays and confusion when manually managing job posts, candidate resumes, and interview schedules.",
+      "solution": "Developed a web-based solution featuring role-based dashboards and permissions. The system structure was engineered through entity-relationship (ER) and use-case modeling, accompanied by interface wireframes for front-end implementation.",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "role": "Academic Team Project",
+      "category": "System Architecture & UI/UX Case Study",
+      "highlights": [
+        "Multi-role authorization and tailored dashboard views for Admin, Recruiter, Job Seeker, and HR Manager.",
+        "End-to-end applicant tracking pipeline covering job posting, application submission, resume management, and shortlisting.",
+        "HR evaluation suite for scheduling interviews, entering candidate feedback, and confirming hiring decisions.",
+        "System database design and interaction workflows mapped out using ER diagrams and Use Case models.",
+        "User interface wireframes showcasing structured page layouts for search, user profiles, and administrative control panels."
+      ],
+      "repo": "https://github.com/saikat-71/Job-Portal-Recruitment-System",
+      "report": "",
+      "cover": "images/projects/job-portal-recruitment-system-job-portal-recruitment-system.jpg",
+      "featured": false,
+      "id": "job-portal-recruitment-system-mvpelsj7",
+      "liveUrl": ""
+    },
+    {
+      "title": "Personal Portfolio Website",
+      "label": "Portfolio",
+      "description": "A modern, responsive personal portfolio website showcasing my skills, projects, academic background, research work, and professional experience.",
+      "overview": "Designed and developed a personal portfolio website to present my technical skills, academic achievements, research activities, and projects in a professional and interactive way. The website includes a responsive interface, interactive UI elements, project showcases, and an admin dashboard for managing portfolio content.",
+      "problem": "I needed a centralized, professional online platform to showcase my work, demonstrate my technical abilities, and make it easier for recruiters, collaborators, and potential clients to explore my background and projects.",
+      "solution": "Built a responsive portfolio website with organized content sections, interactive components, modern visual effects, project and research showcases, and an admin dashboard for managing website content. Focused on usability, responsive design, accessibility, and maintainable code.",
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "JSON",
+        "Git",
+        "GitHub Pages",
+        "Cloudflare"
+      ],
+      "role": "Solo Developer / Personal Project",
+      "category": "Web Development",
+      "highlights": [
+        "Responsive design for desktop, tablet, and mobile devices",
+        "Interactive project showcase with search and filtering",
+        "Dedicated sections for skills, education, research, and professional experience",
+        "Admin dashboard for managing portfolio content",
+        "Dynamic content management using JSON",
+        "Interactive UI animations and scroll effects",
+        "Dark and light theme support",
+        "Image preview and modal interactions",
+        "SEO and social media metadata integration",
+        "GitHub-based version control and deployment"
+      ],
+      "repo": "https://github.com/saikat-71/saikat-71.github.io",
+      "liveUrl": "https://shsaikat.pages.dev/",
+      "report": "",
+      "cover": "images/projects/personal-portfolio-website-personal-portfolio-website.webp",
+      "featured": false,
+      "id": "personal-portfolio-website-mvrzb8a5"
     },
     {
       "title": "Interactive Animated Environment Using OpenGL",
@@ -372,33 +437,33 @@
       "liveUrl": ""
     },
     {
-      "title": "Movie Management System",
-      "label": "JAVA PROJECT",
-      "description": "A Java-based desktop movie management application with user registration, authentication, movie search, purchase, wallet, and movie management features.",
-      "overview": "AIUB Cineplex is a desktop application developed using Java Swing that simulates a simple movie management and purchasing system. Users can create accounts, log in using their student ID, browse available movies, search for specific titles, purchase movies, manage their movie wallet, and remove purchased movies.",
-      "problem": "The project was developed to demonstrate how a Java desktop application can manage user accounts and provide an interactive movie-management workflow using object-oriented programming, file-based data storage, and graphical user interfaces.",
-      "solution": "The system uses a Java Swing-based multi-screen interface connected through a centralized UserService. User information is stored in a local text file, while authenticated users can interact with available movies through search, purchase, wallet, and deletion features.",
+      "title": "Delivery Management System",
+      "label": "SRS/Pickers",
+      "description": "A desktop-based Windows Form application designed to streamline, automate, and centralize delivery operations among admins, employees, sellers, carriers, and customers.",
+      "overview": "The Delivery Management System provides a secure, role-based platform that replaces manual paper-based processes and fragmented spreadsheets. By centralizing shipment creation, carrier assignment, route management, payment verification, and real-time package tracking, the application connects all key stakeholders in a unified workflow to increase operational efficiency and user satisfaction.",
+      "problem": "Small and medium-sized businesses frequently rely on manual methods (paper records, phone calls, spread sheets) to manage logistics, leading to human errors, misplaced delivery documents, inaccurate updates, delayed payments, and confused multi-user communication.",
+      "solution": "A role-based desktop management platform utilizing a centralized database where each user type (Admin, Employee, Seller, Carrier, Customer) gets a personalized dashboard to manage shipments, track statuses, handle payments, and resolve complaints efficiently. The software development follows the Extreme Programming (XP) Agile model to accommodate requirement changes and support continuous feedback through iterative release cycles.",
       "tech": [
-        "Java",
-        "Java Swing",
-        "Object-Oriented Programming (OOP)",
-        "File I/O",
-        "Event-Driven Programming"
+        "Framework",
+        "Design & Prototyping",
+        "Database & Storage",
+        "Version Control & Collaboration"
       ],
-      "role": "Java Desktop Application",
-      "category": "Desktop Application · Java · Movie Management System",
+      "role": "Desktop Application SRS, Architecture Design & Software Testing",
+      "category": "Logistics, Supply Chain & Delivery Management System ",
       "highlights": [
-        "User registration and student ID-based authentication",
-        "Interactive Java Swing graphical user interface",
-        "Movie search, selection, and purchase functionality",
-        "Personal movie wallet with add and delete management",
-        "File-based user data persistence using Java File I/O"
+        "Built as a Windows Form desktop application following the Extreme Programming (XP) Agile methodology.",
+        "Implements Role-Based Access Control (RBAC) across 5 distinct user roles (Admin, Employee, Seller, Carrier, Customer).",
+        "Provides real-time shipment status tracking and instant automated customer notifications.",
+        "Streamlines daily operations with carrier auto-assignment, delivery route management, and payment verification.",
+        "Includes a fully trace-mapped SRS, requirements matrix, UML diagrams (Use Case, Class, Activity), and Git workflow logs.",
+        "Validated through 30 executed black-box test cases covering authentication, UI functionality, edge inputs, and role permissions."
       ],
-      "repo": "https://github.com/saikat-71/Movie-Management-System.git",
-      "report": "",
-      "cover": "images/projects/movie-management-system-movie-management-system.webp",
-      "featured": true,
-      "id": "movie-management-system-muy4l2pi",
+      "repo": "https://github.com/saikat-71/Delivery-Management-System.git",
+      "report": "documents/Delivery_Management_System.pdf",
+      "cover": "images/projects/Delivery-Management-System.webp",
+      "featured": false,
+      "id": "ml",
       "liveUrl": ""
     },
     {
@@ -428,34 +493,6 @@
       "cover": "images/projects/football-league-manager-football-league-manager.jpg",
       "featured": false,
       "id": "football-league-manager-mvpe5m9w"
-    },
-    {
-      "title": "Job Portal & Recruitment System",
-      "label": "Web Application",
-      "description": "A web portal designed to streamline job searching and candidate recruitment through an organized, multi-user system.",
-      "overview": "The project brings together job seekers and hiring teams on a single online platform. It provides personalized workflows and dedicated tools for four distinct user roles: Admin, Recruiter, Job Seeker, and HR Manager.",
-      "problem": "Job seekers spend significant time searching across multiple sources, while employers encounter delays and confusion when manually managing job posts, candidate resumes, and interview schedules.",
-      "solution": "Developed a web-based solution featuring role-based dashboards and permissions. The system structure was engineered through entity-relationship (ER) and use-case modeling, accompanied by interface wireframes for front-end implementation.",
-      "tech": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "role": "Academic Team Project",
-      "category": "System Architecture & UI/UX Case Study",
-      "highlights": [
-        "Multi-role authorization and tailored dashboard views for Admin, Recruiter, Job Seeker, and HR Manager.",
-        "End-to-end applicant tracking pipeline covering job posting, application submission, resume management, and shortlisting.",
-        "HR evaluation suite for scheduling interviews, entering candidate feedback, and confirming hiring decisions.",
-        "System database design and interaction workflows mapped out using ER diagrams and Use Case models.",
-        "User interface wireframes showcasing structured page layouts for search, user profiles, and administrative control panels."
-      ],
-      "repo": "https://github.com/saikat-71/Job-Portal-Recruitment-System",
-      "report": "",
-      "cover": "images/projects/job-portal-recruitment-system-job-portal-recruitment-system.jpg",
-      "featured": false,
-      "id": "job-portal-recruitment-system-mvpelsj7",
-      "liveUrl": ""
     }
   ],
   "experience": [
