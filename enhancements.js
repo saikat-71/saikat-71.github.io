@@ -464,29 +464,28 @@
     let w = 0,
       h = 0,
       dpr = 1,
-      mobile = false,
       ps = [];
 
     const makeParticle = () => ({
       x: Math.random() * w,
       y: Math.random() * h,
-      vx: (Math.random() - 0.5) * (mobile ? 0.45 : 0.28) * (reduceMotion ? 0.5 : 1),
-      vy: (Math.random() - 0.5) * (mobile ? 0.45 : 0.28) * (reduceMotion ? 0.5 : 1),
-      r: (Math.random() * 1.5 + 0.5) * (mobile ? 1.5 : 1),
+      vx: (Math.random() - 0.5) * 0.45 * (reduceMotion ? 0.5 : 1),
+      vy: (Math.random() - 0.5) * 0.45 * (reduceMotion ? 0.5 : 1),
+      r: (Math.random() * 1.5 + 0.5) * 1.5,
     });
 
     function resize() {
       const widthChanged = Math.abs(window.innerWidth - w) > 1;
       w = window.innerWidth;
       h = window.innerHeight;
-      mobile = w <= 768;
       dpr = Math.min(window.devicePixelRatio || 1, 2);
       canvas.width = Math.round(w * dpr);
       canvas.height = Math.round(h * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       // Mobile browsers fire resize when the address bar hides; keep particles in that case.
       if (widthChanged || !ps.length) {
-        const count = Math.min(90, Math.max(mobile ? 42 : 30, Math.floor((w * h) / 14000)));
+        // Same density on every screen size (phone look everywhere).
+        const count = Math.min(120, Math.max(42, Math.floor((w * h) / 9000)));
         ps = Array.from({ length: count }, makeParticle);
       } else {
         ps.forEach((p) => {
@@ -503,9 +502,9 @@
       ctx.clearRect(0, 0, w, h);
       const light = document.body.classList.contains('light');
       const rgb = light ? '7,158,114' : '32,227,162';
-      const dotAlpha = mobile ? 0.6 : 0.3;
-      const linkAlpha = mobile ? 0.22 : 0.09;
-      const linkDist = mobile ? 120 : 110;
+      const dotAlpha = 0.6;
+      const linkAlpha = 0.22;
+      const linkDist = 120;
       ctx.fillStyle = `rgba(${rgb},${dotAlpha})`;
       ps.forEach((p) => {
         p.x += p.vx;
