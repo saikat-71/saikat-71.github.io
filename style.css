@@ -4477,14 +4477,15 @@ body.certificate-modal-open {
 #education .education-list .education {
   width: 100%;
 }
-#certificates {
-  background: var(--bg) !important;
-  border-top-color: var(--line);
-}
-/* 07 / Courses and 09 / Contact stay transparent so the particle background is visible */
+/* 07 / Courses and 09 / Contact are transparent (particles show through);
+   08 / Certifications uses the same .section-dark band as 06 / Research. */
 #courses,
 #contact {
   background: transparent !important;
+}
+#courses,
+#certificates,
+#contact {
   border-top-color: var(--line);
 }
 .header .theme-toggle {
@@ -5711,34 +5712,42 @@ body.lightbox-open {
   visibility: hidden;
 }
 
-/* ===== Hero orbit rings on tablet & mobile =====
-   The rings used to be hidden under 650px. They are now centred on the portrait and
-   sized from the viewport so they stay visible and animated on every screen. */
+/* ===== Hero portrait + orbit rings on tablet & mobile (desktop style) =====
+   Same look as desktop: large portrait with the two glowing rings turning BEHIND it.
+   --hero-h drives both the portrait box and the ring sizes so they always stay in proportion. */
 @media (max-width: 900px) {
+  .hero-visual {
+    --hero-h: clamp(440px, 56vh, 600px);
+    height: var(--hero-h) !important;
+  }
   .hero-visual .orbit {
     display: block !important;
     position: absolute;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    z-index: 1;
+    z-index: 0;
     box-sizing: border-box;
-    width: var(--orbit-d) !important;
-    height: var(--orbit-d) !important;
     max-width: none !important;
   }
   .hero-visual .orbit-1 {
-    --orbit-d: 480px;
+    width: calc(var(--hero-h) * 0.98) !important;
+    height: calc(var(--hero-h) * 0.98) !important;
   }
   .hero-visual .orbit-2 {
-    --orbit-d: 570px;
+    width: calc(var(--hero-h) * 1.16) !important;
+    height: calc(var(--hero-h) * 1.16) !important;
+  }
+  .hero-visual .profile {
+    z-index: 2;
   }
 }
 @media (max-width: 600px) {
-  .hero-visual .orbit-1 {
-    --orbit-d: min(84vw, 340px);
-  }
-  .hero-visual .orbit-2 {
-    --orbit-d: min(96vw, 400px);
+  .hero-visual {
+    --hero-h: clamp(380px, 52vh, 460px);
+    /* let the portrait use the full screen width */
+    width: calc(100% + 8vw);
+    margin-left: -4vw;
+    margin-right: -4vw;
   }
 }
