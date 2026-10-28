@@ -88,8 +88,7 @@
     for (let i = tracked.length - 1; i >= 0; i--) if (!tracked[i].isConnected) tracked.splice(i, 1);
     if (!tracked.length) return;
     const max = Math.max(0, root.scrollHeight - vh);
-    const header = document.querySelector('.header');
-    const topEdge = (header ? header.offsetHeight : 72) * 0.6;
+    const topEdge = 24; // the header is no longer fixed, so only a small margin at the top
     const rects = tracked.map((el) => el.getBoundingClientRect()); // read first ...
     tracked.forEach((el, i) => {
       // ... then write

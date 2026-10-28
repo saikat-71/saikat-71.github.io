@@ -77,7 +77,7 @@ button {
   margin: auto;
 }
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -4200,7 +4200,7 @@ body {
   position: relative;
 }
 body > header.header {
-  position: fixed !important;
+  position: absolute !important;
   top: 0 !important;
   left: 0 !important;
   right: 0 !important;
@@ -4251,21 +4251,9 @@ main {
   scroll-margin-top: 88px;
 }
 
-/* ===== Final header behavior: auto-hide on downward scroll ===== */
+/* Header is not sticky: it only lives at the top of the page (no auto-hide / re-appear on scroll). */
 body > header.header {
-  transition:
-    transform 0.28s ease,
-    background-color 0.22s ease,
-    border-color 0.22s ease,
-    box-shadow 0.22s ease;
-}
-body > header.header.header-hidden {
-  transform: translateY(-105%);
-}
-@media (prefers-reduced-motion: reduce) {
-  body > header.header {
-    transition: none;
-  }
+  transform: none !important;
 }
 
 /* ===== Certificate preview: modal scroll isolation + responsive document fit ===== */
@@ -4273,7 +4261,10 @@ html.certificate-modal-open,
 body.certificate-modal-open {
   overflow: hidden !important;
   overscroll-behavior: none;
-  height: 100%;
+}
+/* keep the page width identical while the scrollbar is hidden, so nothing shifts */
+html.certificate-modal-open {
+  scrollbar-gutter: stable;
 }
 body.certificate-modal-open {
   touch-action: none;

@@ -563,8 +563,15 @@
       document.body.classList.remove('certificate-modal-open');
       modal.removeAttribute('data-scroll-y');
       window.__certificatePreviewTrigger = null;
+      // Restore the exact position instantly. The page uses `scroll-behavior: smooth`, which
+      // would otherwise animate the jump (it looked like the page scrolling down from the top).
+      const root = document.documentElement;
+      const prev = root.style.scrollBehavior;
+      root.style.scrollBehavior = 'auto';
+      window.scrollTo(0, restoreY);
       requestAnimationFrame(() => {
-        window.scrollTo({ top: restoreY, left: 0, behavior: 'auto' });
+        if (Math.abs((window.scrollY || 0) - restoreY) > 1) window.scrollTo(0, restoreY);
+        root.style.scrollBehavior = prev;
         if (trigger && document.contains(trigger)) trigger.focus({ preventScroll: true });
       });
     };

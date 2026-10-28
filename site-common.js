@@ -483,36 +483,6 @@
     );
   }
 
-  function initHeaderScrollBehavior() {
-    const header = document.querySelector('body > header.header');
-    if (!header || header.dataset.scrollBound === '1') return;
-    header.dataset.scrollBound = '1';
-    let lastY = window.scrollY || 0;
-    let ticking = false;
-    const update = () => {
-      ticking = false;
-      const y = window.scrollY || 0;
-      if (y <= 12) {
-        header.classList.remove('header-hidden');
-      } else if (y > lastY + 4) {
-        header.classList.add('header-hidden');
-      } else if (y < lastY - 4) {
-        header.classList.remove('header-hidden');
-      }
-      lastY = y;
-    };
-    window.addEventListener(
-      'scroll',
-      () => {
-        if (!ticking) {
-          ticking = true;
-          requestAnimationFrame(update);
-        }
-      },
-      { passive: true }
-    );
-  }
-
   // Register the service worker after the page has loaded.
   function initPWA() {
     if (!('serviceWorker' in navigator)) return;
@@ -529,7 +499,6 @@
   renderFooter(fallback);
   initQuickNavigator(fallback);
   bindInteractions();
-  initHeaderScrollBehavior();
   initCursor();
   initPWA();
 
@@ -540,7 +509,6 @@
       initQuickNavigator(data);
       applySEO(data);
       bindInteractions();
-      initHeaderScrollBehavior();
       window.portfolioData = data;
       document.dispatchEvent(new CustomEvent('portfolio:components-ready', { detail: data }));
     })
