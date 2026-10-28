@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://saikat-71.github.io/sitemap.xml
