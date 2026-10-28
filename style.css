@@ -5713,33 +5713,50 @@ body.lightbox-open {
 }
 
 /* ===== Hero portrait + orbit rings on tablet & mobile (desktop style) =====
-   Same look as desktop: large portrait with the two glowing rings turning BEHIND it.
-   --hero-h drives both the portrait box and the ring sizes so they always stay in proportion. */
+   Two thin rings sit BEHIND the portrait, centred horizontally and at head level
+   (about 36% from the top), sized from the portrait width: 70% and 82%.
+   --hero-h is the portrait box height; the portrait is ~0.941 x as wide as it is tall. */
 @media (max-width: 900px) {
   .hero-visual {
     --hero-h: clamp(440px, 56vh, 600px);
+    --hero-w: min(calc(var(--hero-h) * 0.941), 100%);
     height: var(--hero-h) !important;
+    justify-content: center;
   }
   .hero-visual .orbit {
     display: block !important;
     position: absolute;
-    top: 50%;
+    top: 36%;
     left: 50%;
     translate: -50% -50%;
     z-index: 0;
     box-sizing: border-box;
     max-width: none !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
   }
   .hero-visual .orbit-1 {
-    width: calc(var(--hero-h) * 0.98) !important;
-    height: calc(var(--hero-h) * 0.98) !important;
+    width: calc(var(--hero-w) * 0.7) !important;
   }
   .hero-visual .orbit-2 {
-    width: calc(var(--hero-h) * 1.16) !important;
-    height: calc(var(--hero-h) * 1.16) !important;
+    width: calc(var(--hero-w) * 0.82) !important;
   }
   .hero-visual .profile {
     z-index: 2;
+  }
+  /* Centre the Projects / Research / Experience stat boxes */
+  .hero-metrics {
+    width: 100%;
+    max-width: 620px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-self: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .hero-metrics > div {
+    width: 100%;
+    text-align: center;
   }
 }
 @media (max-width: 600px) {
