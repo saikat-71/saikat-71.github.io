@@ -2,7 +2,7 @@
   "version": 5,
   "site": {
     "repo": "saikat-71/saikat-71.github.io",
-    "lastUpdated": "2026-10-27",
+    "lastUpdated": "2026-10-28",
     "name": "Md Sobahan Hasan Saikat",
     "url": "https://saikat-71.github.io/",
     "analytics": {
@@ -115,7 +115,7 @@
     "linkedin": "https://www.linkedin.com/in/sobahansaikat/",
     "email": "md.shsaikat71@gmail.com",
     "phone": "+8801751027271",
-    "tagline": "CSE student focused on software, analytics, machine learning and practical technology projects.",
+    "tagline": "Turning Data into Insights, Technology into Solutions, and Ideas into Impact.",
     "sections": {
       "education": {
         "number": "05",
@@ -526,15 +526,15 @@
   ],
   "education": [
     {
-      "id": "bsc-aiub",
-      "date": "May 2023 – Apr 2027",
       "title": "B.Sc. in Computer Science & Engineering",
+      "date": "May 2023 – Apr 2027",
+      "major": "Computer Science & Engineering",
+      "category": "Undergraduate",
       "institution": "American International University-Bangladesh (AIUB)",
       "icon": "fa-solid fa-graduation-cap",
-      "description": "Relevant coursework: Process Design, Project Management, Database Systems, Object-Oriented Programming and Data Analysis.",
+      "description": "Pursuing undergraduate studies with a focus on computing fundamentals, analytical problem-solving, and technology-driven solutions. Continuously developing technical and professional skills through academic projects and practical learning.",
       "featured": true,
-      "major": "Computer Science & Engineering",
-      "category": "Undergraduate"
+      "id": "bsc-aiub"
     },
     {
       "title": "Higher Secondary Certificate (HSC)",
@@ -620,7 +620,7 @@
       "models": "No Machine Learning models were used. The study analyzes qualitative and quantitative survey data to identify trends in students' educational and career choices.",
       "status": "Completed — presented at the 7th Bangladeshi International Conference on Industrial Engineering and Operations Management (IEOM), Dhaka, Bangladesh, December 21–22, 2024. DOI: https://doi.org/10.46254/BA07.20240175",
       "liveUrl": "https://www.researchgate.net/publication/387998069_Educational_Aspirations_and_Brain_Drain_A_Study_of_Bangladeshi_Undergraduate_Students'_Perspectives",
-      "abstract": "This research investigates brain drain among Bangladeshi undergraduate students and examines their perceptions of the local education system, educational opportunities abroad, employability after returning, and quality of life abroad. An online structured survey collected over 90 responses from students at public and private universities. Both qualitative and quantitative data were analyzed to identify trends in students' educational and career choices. The findings indicate that higher academic quality, greater career opportunities, and financial benefits are major reasons students prefer foreign universities. The study suggests improving local education quality, increasing research funding, and aligning academic programs with industry needs to help reduce brain drain.",
+      "abstract": "Investigated the key factors influencing brain drain through survey-based research and data analysis. Explored underlying trends, contributing factors, and potential implications to develop evidence-based insights into the issue.",
       "problem": "Bangladesh faces challenges in retaining skilled and talented undergraduate students because many students consider studying abroad due to perceived limitations in local education, career opportunities, financial prospects, and quality of life.",
       "gap": "Bangladesh faces challenges in retaining skilled and talented undergraduate students because many students consider studying abroad due to perceived limitations in local education, career opportunities, financial prospects, and quality of life.",
       "methodology": "An online structured survey was conducted among Bangladeshi undergraduate students from various public and private universities. More than 90 responses were collected. The collected data included both qualitative and quantitative information, which were analyzed to identify trends related to students' educational aspirations, career choices, perceptions of studying abroad, and factors influencing brain drain.",
@@ -649,7 +649,7 @@
       "models": "Random Forest and XGBoost",
       "status": "Research / Proposal Project",
       "liveUrl": "https://github.com/saikat-71/E-Commerce_Sales_Forecasting_Using_ML",
-      "abstract": "The research proposes an e-commerce sales forecasting system using machine learning and interactive visualization. Historical transaction data will be cleaned and analyzed through feature engineering and EDA. Random Forest and XGBoost will be developed and compared using MAE, RMSE, and R², with time-series data splitting. The forecasting results will then be integrated into an interactive dashboard for sales, product, regional, customer, profit, discount, and future-sales analysis.",
+      "abstract": "Conducted academic research to examine a real-world problem using structured research methods, data interpretation, and critical analysis. Focused on identifying meaningful patterns and developing insights supported by research findings.",
       "problem": "E-commerce businesses generate large amounts of transaction and customer data, but sales can vary due to seasonality, prices, discounts, customer preferences, products, and regional factors. Businesses need accurate sales forecasting along with understandable insights into products, customers, regions, profits, discounts, and inventory.",
       "gap": "Existing work such as Grocast: Interactive Sales Forecasting Dashboard focuses on KPI measurement, trends, and sales performance, but lacks comparison of multiple ML forecasting models, explanation of factors affecting forecasts, integrated product/customer/region/profit analysis, and comprehensive business decision support.",
       "methodology": "Data Collection → Data Preprocessing → Feature Engineering → EDA → Random Forest & XGBoost → Model Evaluation → Model Comparison → Interactive Dashboard → Business Decision Support. Evaluation will use MAE, RMSE, and R², with time-series splitting for training/testing.",
@@ -686,9 +686,8 @@
     "heroSubtitle": "B.Sc. (Engg.) in Computer Science & Engineering",
     "heading": "Building skills through learning & projects.",
     "paragraphs": [
-      "I am Md Sobahan Hasan Saikat, a Computer Science & Engineering student at American International University-Bangladesh (AIUB).",
-      "I am interested in data analytics, programming, machine learning, software development and database systems. I enjoy turning ideas into practical solutions and continuously improving my technical skills through academic and personal projects.",
-      "I also have professional exposure to graphics and content design and digital marketing. I treat these as supporting skills that complement my technology background rather than as my primary career focus."
+      "I am an aspiring IT professional with a strong interest in data analytics, business intelligence, and technology-driven problem-solving. I am passionate about transforming data into meaningful insights and leveraging technology to address real-world challenges.",
+      "Through academic projects, research, and continuous learning, I am developing my technical expertise, analytical thinking, and problem-solving abilities. I aim to contribute to impactful projects, create data-informed solutions, and grow into a versatile professional at the intersection of technology and business."
     ],
     "facts": [
       {
@@ -792,7 +791,7 @@
       "year": "2024",
       "certificateDate": "02-12-2024",
       "certificateReference": "222810/30180",
-      "description": "Advance Digital Marketing L1, L2 (Online) is a practical digital marketing course covering essential and advanced techniques for building an online presence, generating leads, running paid advertising campaigns, growing social media platforms, setting up e-commerce stores, freelancing, and implementing SEO strategies. The course also includes hands-on topics such as Facebook Pixel & API, Google Ads, YouTube monetization, Fiverr, Upwork, Shopify, WordPress, and keyword research.",
+      "description": "Expanded professional knowledge through structured learning, strengthening foundational concepts and developing practical skills relevant to ongoing career development.",
       "tools": [
         "Canva",
         "LinkedIn",
@@ -825,7 +824,7 @@
       "year": "2026",
       "certificateDate": "N/A",
       "certificateReference": "N/A",
-      "description": "Completed a 30-day hands-on internship in Data Analytics, gaining practical experience in data cleaning, analysis, visualization, business intelligence, and dashboard development. Worked with Excel, Power BI, SQL, and Python to analyze datasets, build interactive dashboards, perform exploratory data analysis, and develop data-driven insights. The internship also included a capstone project, GitHub portfolio development, and interview preparation.",
+      "description": "Developed a deeper understanding of key concepts and industry-relevant practices through focused coursework, supporting continuous technical learning and professional growth.",
       "tools": [
         "Microsoft Excel",
         "Power Query",
@@ -868,7 +867,7 @@
       "year": "2026",
       "certificateDate": "N/A",
       "certificateReference": "N/A",
-      "description": "Completed a 21-day hands-on internship focused on Power BI and Business Intelligence. Built and analyzed dashboards across business, finance, sales, retail, e-commerce, marketing, HR, healthcare, supply chain, sports, and environmental analytics. Gained practical experience in KPI development, data analysis, DAX, interactive reporting, drill-throughs, bookmarks, tooltips, mobile layouts, and business storytelling. Completed an enterprise capstone project integrating Microsoft Fabric, SQL, and Power BI for end-to-end analytics.",
+      "description": "Enhanced professional competencies through additional training, with an emphasis on applying acquired knowledge to practical tasks and future career opportunities.",
       "tools": [
         "Microsoft Power BI",
         "DAX",
