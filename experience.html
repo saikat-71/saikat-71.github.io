@@ -123,45 +123,6 @@
       </div>
     </main>
     <!-- Shared footer rendered by site-common.js -->
-    <script>
-      const body = document.body;
-      const yearEl = document.getElementById('year');
-      if (yearEl) yearEl.textContent = new Date().getFullYear();
-      const canvas = document.getElementById('particles'),
-        ctx = canvas && canvas.getContext('2d');
-      if (canvas && ctx) {
-        let ps = [];
-        function resize() {
-          canvas.width = innerWidth;
-          canvas.height = innerHeight;
-          ps = Array.from({ length: Math.min(60, Math.floor(innerWidth / 20)) }, () => ({
-            x: Math.random() * innerWidth,
-            y: Math.random() * innerHeight,
-            vx: (Math.random() - 0.5) * 0.22,
-            vy: (Math.random() - 0.5) * 0.22,
-            r: Math.random() * 1.4 + 0.4,
-          }));
-        }
-        function draw() {
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-          const light = body.classList.contains('light');
-          ps.forEach((p) => {
-            p.x += p.vx;
-            p.y += p.vy;
-            if (p.x < 0 || p.x > innerWidth) p.vx *= -1;
-            if (p.y < 0 || p.y > innerHeight) p.vy *= -1;
-            ctx.fillStyle = light ? 'rgba(7,158,114,.22)' : 'rgba(32,227,162,.22)';
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-            ctx.fill();
-          });
-          requestAnimationFrame(draw);
-        }
-        addEventListener('resize', resize);
-        resize();
-        draw();
-      }
-    </script>
     <script src="site-common.js"></script>
     <script src="analytics.js" defer></script>
     <script src="enhancements.js"></script>
