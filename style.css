@@ -4477,10 +4477,14 @@ body.certificate-modal-open {
 #education .education-list .education {
   width: 100%;
 }
-#courses,
-#certificates,
-#contact {
+#certificates {
   background: var(--bg) !important;
+  border-top-color: var(--line);
+}
+/* 07 / Courses and 09 / Contact stay transparent so the particle background is visible */
+#courses,
+#contact {
+  background: transparent !important;
   border-top-color: var(--line);
 }
 .header .theme-toggle {
@@ -4522,7 +4526,7 @@ body.light #certificates.section-dark {
   background: #eaf0f6;
 }
 #contact.section {
-  background: var(--bg);
+  background: transparent;
 }
 #certificateModal .certificate-preview {
   position: relative;
@@ -5705,4 +5709,36 @@ body.lightbox-open {
 /* Hero totals are filled from portfolio.json; stay hidden (but keep their space) until real numbers exist. */
 .hero-metrics[data-ready='false'] {
   visibility: hidden;
+}
+
+/* ===== Hero orbit rings on tablet & mobile =====
+   The rings used to be hidden under 650px. They are now centred on the portrait and
+   sized from the viewport so they stay visible and animated on every screen. */
+@media (max-width: 900px) {
+  .hero-visual .orbit {
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 1;
+    box-sizing: border-box;
+    width: var(--orbit-d) !important;
+    height: var(--orbit-d) !important;
+    max-width: none !important;
+  }
+  .hero-visual .orbit-1 {
+    --orbit-d: 480px;
+  }
+  .hero-visual .orbit-2 {
+    --orbit-d: 570px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-visual .orbit-1 {
+    --orbit-d: min(84vw, 340px);
+  }
+  .hero-visual .orbit-2 {
+    --orbit-d: min(96vw, 400px);
+  }
 }
