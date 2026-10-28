@@ -451,7 +451,93 @@
       el.addEventListener('blur', reset);
     });
   }
+  // Particle background (shared by every page that has <canvas id="particles">).
+  // Sized by screen area and drawn larger/brighter on phones so it stays visible there.
+  function initParticles() {
+    const canvas = document.getElementById('particles');
+    if (!canvas || canvas.dataset.running === 'true') return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    canvas.dataset.running = 'true';
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let w = 0,
+      h = 0,
+      dpr = 1,
+      mobile = false,
+      ps = [];
+
+    const makeParticle = () => ({
+      x: Math.random() * w,
+      y: Math.random() * h,
+      vx: (Math.random() - 0.5) * (mobile ? 0.45 : 0.28) * (reduceMotion ? 0.5 : 1),
+      vy: (Math.random() - 0.5) * (mobile ? 0.45 : 0.28) * (reduceMotion ? 0.5 : 1),
+      r: (Math.random() * 1.5 + 0.5) * (mobile ? 1.5 : 1),
+    });
+
+    function resize() {
+      const widthChanged = Math.abs(window.innerWidth - w) > 1;
+      w = window.innerWidth;
+      h = window.innerHeight;
+      mobile = w <= 768;
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(w * dpr);
+      canvas.height = Math.round(h * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      // Mobile browsers fire resize when the address bar hides; keep particles in that case.
+      if (widthChanged || !ps.length) {
+        const count = Math.min(90, Math.max(mobile ? 42 : 30, Math.floor((w * h) / 14000)));
+        ps = Array.from({ length: count }, makeParticle);
+      } else {
+        ps.forEach((p) => {
+          p.y = Math.min(p.y, h);
+        });
+      }
+    }
+
+    function draw() {
+      if (document.hidden) {
+        requestAnimationFrame(draw);
+        return;
+      }
+      ctx.clearRect(0, 0, w, h);
+      const light = document.body.classList.contains('light');
+      const rgb = light ? '7,158,114' : '32,227,162';
+      const dotAlpha = mobile ? 0.6 : 0.3;
+      const linkAlpha = mobile ? 0.22 : 0.09;
+      const linkDist = mobile ? 120 : 110;
+      ctx.fillStyle = `rgba(${rgb},${dotAlpha})`;
+      ps.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < 0 || p.x > w) p.vx *= -1;
+        if (p.y < 0 || p.y > h) p.vy *= -1;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+      });
+      ctx.lineWidth = 0.6;
+      for (let i = 0; i < ps.length; i++)
+        for (let j = i + 1; j < ps.length; j++) {
+          const d = Math.hypot(ps[i].x - ps[j].x, ps[i].y - ps[j].y);
+          if (d < linkDist) {
+            ctx.strokeStyle = `rgba(${rgb},${linkAlpha * (1 - d / linkDist)})`;
+            ctx.beginPath();
+            ctx.moveTo(ps[i].x, ps[i].y);
+            ctx.lineTo(ps[j].x, ps[j].y);
+            ctx.stroke();
+          }
+        }
+      requestAnimationFrame(draw);
+    }
+
+    window.addEventListener('resize', resize, { passive: true });
+    resize();
+    draw();
+  }
+
   function init() {
+    initParticles();
     addMagneticControls();
     addProgress();
     addToast();
