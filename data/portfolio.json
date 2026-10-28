@@ -312,6 +312,40 @@
       "liveUrl": ""
     },
     {
+      "title": "Exam Score Prediction Using Machine Learning",
+      "label": "ExamScore AI",
+      "description": "A machine learning project that analyzes student performance data and predicts exam scores through an interactive web dashboard.",
+      "overview": "ExamScore AI is an educational machine learning project developed to explore the relationship between study habits and academic performance. It combines data analysis, regression-based prediction, data visualization, and a web interface to demonstrate how machine learning can be applied to student performance analysis.",
+      "problem": "Students' exam performance can vary depending on their study habits and other factors. Understanding patterns in student performance can help explore how study time relates to exam results. This project uses available student data to investigate these patterns and estimate exam scores.",
+      "solution": "Prepared and analyzed a student performance dataset, explored relationships between study habits and exam scores, and developed a machine learning workflow for score prediction. A web-based dashboard provides an accessible interface for interacting with the prediction feature.",
+      "tech": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "Jupyter Notebook",
+        "Web Tech"
+      ],
+      "role": "Academic Project",
+      "category": "Machine Learning / Artificial Intelligence",
+      "highlights": [
+        "Analyzed student performance data to identify useful patterns.",
+        "Explored the relationship between study hours and exam scores.",
+        "Applied regression-based machine learning for score prediction.",
+        "Used data visualization to present patterns in the dataset.",
+        "Developed an interactive web dashboard for predictions.",
+        "Organized the project with Python scripts and a Jupyter Notebook.",
+        "Prepared a static website version for GitHub Pages deployment.",
+        "Focused on practical learning in data analysis and machine learning."
+      ],
+      "repo": "https://github.com/saikat-71/Exam-Score-Prediction-Using-Machine-Learning",
+      "liveUrl": "https://saikat-71.github.io/Exam-Score-Prediction-Using-Machine-Learning/",
+      "report": "",
+      "cover": "images/projects/exam-score-prediction-using-machine-learning-exam-score-prediction-using-machine-learning.webp",
+      "featured": true,
+      "id": "exam-score-prediction-using-machine-learning-mvsnny92"
+    },
+    {
       "title": "Movie Management System",
       "label": "JAVA PROJECT",
       "description": "A Java-based desktop movie management application with user registration, authentication, movie search, purchase, wallet, and movie management features.",
@@ -335,11 +369,11 @@
         "File-based user data persistence using Java File I/O"
       ],
       "repo": "https://github.com/saikat-71/Movie-Management-System.git",
+      "liveUrl": "",
       "report": "",
       "cover": "images/projects/movie-management-system-movie-management-system.webp",
-      "featured": true,
-      "id": "movie-management-system-muy4l2pi",
-      "liveUrl": ""
+      "featured": false,
+      "id": "movie-management-system-muy4l2pi"
     },
     {
       "title": "Job Portal & Recruitment System",
