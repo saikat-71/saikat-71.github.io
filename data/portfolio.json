@@ -527,6 +527,40 @@
       "cover": "images/projects/football-league-manager-football-league-manager.jpg",
       "featured": false,
       "id": "football-league-manager-mvpe5m9w"
+    },
+    {
+      "title": "Mini ATM Booth Simulator",
+      "label": "ATM Simulator",
+      "description": "A Python ATM simulator with a realistic booth-style web interface for basic banking operations.",
+      "overview": "Mini ATM Booth Simulator is an educational project that demonstrates common ATM operations through a Python command-line program and a browser-based interface. Users can log in with a demo PIN, check their balance, deposit or withdraw money, view account details, review recent transactions, and change their PIN.",
+      "problem": "Basic ATM programs are often limited to a text-based menu, which can make the experience less interactive. This project explores how familiar banking operations can be presented through a more visual and user-friendly interface.",
+      "solution": "The project includes a Python-based ATM program and a separate web interface built with HTML, CSS, and JavaScript. The web version uses an ATM-inspired layout, an on-screen numeric keypad, input validation, and browser storage to demonstrate account operations and transaction history.",
+      "tech": [
+        "Python",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Github Pages"
+      ],
+      "role": "Python Programming",
+      "category": "Web Development / Programming",
+      "highlights": [
+        "PIN-based demo login with limited attempts",
+        "Balance inquiry, deposit, and withdrawal",
+        "Input validation and insufficient-balance checks",
+        "Account details and transaction history",
+        "Change-PIN functionality",
+        "ATM-inspired booth interface with an on-screen keypad",
+        "Browser-based state storage using LocalStorage",
+        "Separate Python command-line implementation",
+        "Static website suitable for GitHub Pages deployment"
+      ],
+      "repo": "https://github.com/saikat-71/Mini-ATM-Booth",
+      "liveUrl": "https://saikat-71.github.io/Mini-ATM-Booth/",
+      "report": "",
+      "cover": "images/projects/mini-atm-booth-simulator-mini-atm-booth.webp",
+      "featured": false,
+      "id": "mini-atm-booth-simulator-mvspftwb"
     }
   ],
   "experience": [
