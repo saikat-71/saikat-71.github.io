@@ -2,10 +2,10 @@
  * Scroll animations
  * -----------------
  *  1. Scroll progress bar at the top of the page.
- *  2. Reveal-on-scroll for sections, cards, timeline items, grids and the footer,
- *     with direction variants and a staggered entrance for items that appear together.
- *  3. Inside revealed cards: tags, skill pills, facts and skill bars cascade in.
- *  4. Section headings: eyebrow slides in, title wipes in, description follows.
+ *  2. Scroll-linked fade for sections, cards, timeline items, grids and the footer:
+ *     items fade in and rise up gradually as they enter from the bottom of the screen,
+ *     and fade out gradually as they leave through the top. Scrolling back up plays the
+ *     same thing in reverse (the effect follows the scroll position, it is not a one-shot).
  *  5. Timeline: the accent line draws itself as you scroll, markers pop in.
  *  6. Navigation scroll-spy: the menu link of the current section is highlighted.
  *  7. Hero: portrait parallax, orbit rings rotate with scroll, text drifts and fades.
@@ -19,11 +19,7 @@
 (() => {
   'use strict';
 
-  if (
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
-    !('IntersectionObserver' in window)
-  )
-    return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const root = document.documentElement;
   root.classList.add('sa-js');
@@ -79,6 +75,55 @@
     });
   }
 
+  /* ---------- Scroll-linked fade (items rise in from the bottom, fade out at the top) ---------- */
+  const tracked = [];
+  const ease = (t) => t * t * (3 - 2 * t);
+  const ENTER_ZONE = 0.22; // share of the screen height used for fading in
+  const EXIT_ZONE = 0.2; // share of the screen height used for fading out
+  const RISE = 44; // px an item travels upward while fading in
+  const DRIFT = 26; // px an item keeps moving up while fading out
+
+  function updateFade(y, vh) {
+    // forget elements that were removed from the page (filters / re-renders)
+    for (let i = tracked.length - 1; i >= 0; i--) if (!tracked[i].isConnected) tracked.splice(i, 1);
+    if (!tracked.length) return;
+    const max = Math.max(0, root.scrollHeight - vh);
+    const header = document.querySelector('.header');
+    const topEdge = (header ? header.offsetHeight : 72) * 0.6;
+    const rects = tracked.map((el) => el.getBoundingClientRect()); // read first ...
+    tracked.forEach((el, i) => {
+      // ... then write
+      const r = rects[i];
+      let o = 0,
+        ty = 0,
+        sc = 1;
+      if (r.width > 0 || r.height > 0) {
+        // Fade in: from the bottom edge of the screen up to ENTER_ZONE.
+        // Elements near the end of the page can never travel that far, so stop where they can.
+        const lowestTop = r.top - (max - y);
+        const enterEnd = Math.min(vh - 1, Math.max(vh * (1 - ENTER_ZONE), lowestTop + 2));
+        const pin = ease(clamp((vh - r.top) / Math.max(vh - enterEnd, 1), 0, 1));
+        // Fade out: while the element's bottom edge travels up under the header.
+        const highestBottom = r.bottom + y;
+        const exitStart = Math.max(
+          topEdge + 1,
+          Math.min(topEdge + vh * EXIT_ZONE, highestBottom - 2)
+        );
+        const pout = ease(clamp((r.bottom - topEdge) / Math.max(exitStart - topEdge, 1), 0, 1));
+        const p = Math.min(pin, pout);
+        o = p;
+        ty = (1 - pin) * RISE - (1 - pout) * DRIFT;
+        if (el.dataset.sf === 'zoom') sc = 0.95 + 0.05 * p;
+      }
+      const key = o.toFixed(3) + '|' + ty.toFixed(1) + '|' + sc.toFixed(3);
+      if (el._sfKey === key) return;
+      el._sfKey = key;
+      el.style.opacity = o.toFixed(3);
+      el.style.translate = `0 ${ty.toFixed(1)}px`;
+      el.style.scale = sc === 1 ? '' : sc.toFixed(3);
+    });
+  }
+
   function updateScrollSpy(y, vh) {
     const sections = document.querySelectorAll('main > section[id]');
     if (!sections.length) return;
@@ -107,6 +152,7 @@
     updateHero(y, vh);
     updateTimelines(vh);
     updateCovers(vh);
+    updateFade(y, vh);
     updateScrollSpy(y, vh);
     ticking = false;
   }
@@ -130,17 +176,17 @@
   });
   onScroll();
 
-  /* ---------- Reveal on scroll ---------- */
-  // selector -> animation variant (first match wins)
+  /* ---------- Which elements take part ---------- */
+  // selector -> variant (first match wins); 'zoom' also scales slightly
   const TARGETS = [
-    ['.section-head', 'fade'], // its children animate individually
-    ['.about-copy', 'left'],
-    ['.fact-grid', 'right'],
-    ['.timeline-item', 'left'],
+    ['.section-head', 'fade'],
+    ['.about-copy', 'up'],
+    ['.fact-grid', 'up'],
+    ['.timeline-item', 'up'],
     ['.skill-card', 'up'],
     ['.project', 'up'],
     ['.research-card', 'up'],
-    ['.education', 'left'],
+    ['.education', 'up'],
     ['.course-card', 'up'],
     ['.certificate', 'zoom'],
     ['.stat', 'zoom'],
@@ -154,13 +200,6 @@
     ['.reveal', 'up'],
   ];
   const SELECTOR = TARGETS.map((t) => t[0]).join(',');
-  const CHILD_SELECTOR = '.tags span, .skill-pill, .language-item, .fact';
-  const DURATION = 1500; // must outlast the longest child transition in the CSS
-  const STAGGER = 90; // ms between items revealed in the same batch
-  const MAX_DELAY = 450;
-
-  const pending = [];
-  let observer = null;
 
   function variantFor(el) {
     for (const [sel, variant] of TARGETS) if (el.matches(sel)) return variant;
@@ -168,13 +207,13 @@
   }
 
   function prepare(el) {
-    if (el.dataset.sa || el.closest('.hero') || el.closest('.modal, .lightbox')) return;
-    el.dataset.sa = el.dataset.saVariant || variantFor(el);
+    if (el.dataset.sf || el.closest('.hero') || el.closest('.modal, .lightbox')) return;
+    if (el.parentElement && el.parentElement.closest('.sf')) return; // never nest two fades
+    el.dataset.sf = variantFor(el);
     // Take over from the older .reveal mechanism so the two never fight.
     el.classList.remove('reveal', 'show');
-    el.classList.add('sa');
-    if (observer) observer.observe(el);
-    else pending.push(el);
+    el.classList.add('sf');
+    tracked.push(el);
   }
 
   function scan(node) {
@@ -183,47 +222,17 @@
     node.querySelectorAll(SELECTOR).forEach(prepare);
   }
 
-  function reveal(entries) {
-    const visible = entries
-      .filter((e) => e.isIntersecting)
-      .sort(
-        (a, b) =>
-          a.boundingClientRect.top - b.boundingClientRect.top ||
-          a.boundingClientRect.left - b.boundingClientRect.left
-      );
-
-    visible.forEach((entry, i) => {
-      const el = entry.target;
-      observer.unobserve(el);
-      const delay = Math.min(MAX_DELAY, i * STAGGER);
-      el.style.setProperty('--sa-delay', `${delay}ms`);
-      // Index the inner pieces so they cascade one after another.
-      el.querySelectorAll(CHILD_SELECTOR).forEach((c, n) => c.style.setProperty('--i', n));
-      el.classList.add('sa-in');
-      // Once finished, drop the helper classes so the element's normal
-      // hover transitions and transforms from style.css work again.
-      setTimeout(
-        () => {
-          el.classList.remove('sa', 'sa-in');
-          el.style.removeProperty('--sa-delay');
-        },
-        DURATION + delay + 150
-      );
-    });
-  }
-
-  function start() {
-    observer = new IntersectionObserver(reveal, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
-    pending.splice(0).forEach((el) => observer.observe(el));
-  }
-
-  // Tag everything now (so nothing flashes), but start observing only after the
-  // preloader has gone, otherwise the first screen animates out of sight.
+  // Tag everything now (so nothing flashes), then keep up with content rendered later.
   scan(document.body);
   new MutationObserver((mutations) => {
     mutations.forEach((m) => m.addedNodes.forEach(scan));
+    onScroll();
   }).observe(document.body, { childList: true, subtree: true });
 
-  if (document.getElementById('preloader')) setTimeout(start, 1300);
-  else start();
+  // Filters, tabs and image loading change the page height without scrolling: refresh then too.
+  if ('ResizeObserver' in window) new ResizeObserver(onScroll).observe(document.body);
+  ['click', 'input', 'change', 'keyup'].forEach((evt) =>
+    document.addEventListener(evt, () => setTimeout(onScroll, 60), { passive: true })
+  );
+  onScroll();
 })();
