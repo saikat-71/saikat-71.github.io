@@ -219,58 +219,6 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
         reset();
     });
   }
-
-  // Particle background
-  const canvas = document.getElementById('particles'),
-    ctx = canvas && canvas.getContext('2d');
-  if (canvas && ctx) {
-    let ps = [];
-    function resize() {
-      canvas.width = innerWidth;
-      canvas.height = innerHeight;
-      ps = Array.from({ length: Math.min(75, Math.floor(innerWidth / 18)) }, () => ({
-        x: Math.random() * innerWidth,
-        y: Math.random() * innerHeight,
-        vx: (Math.random() - 0.5) * 0.25,
-        vy: (Math.random() - 0.5) * 0.25,
-        r: Math.random() * 1.5 + 0.4,
-      }));
-    }
-    function draw() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      const light = body.classList.contains('light');
-      ps.forEach((p) => {
-        p.x += p.vx;
-        p.y += p.vy;
-        if (p.x < 0 || p.x > innerWidth) p.vx *= -1;
-        if (p.y < 0 || p.y > innerHeight) p.vy *= -1;
-        ctx.fillStyle = light ? 'rgba(7,158,114,.28)' : 'rgba(32,227,162,.28)';
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fill();
-      });
-      for (let i = 0; i < ps.length; i++)
-        for (let j = i + 1; j < ps.length; j++) {
-          const dx = ps[i].x - ps[j].x,
-            dy = ps[i].y - ps[j].y,
-            d = Math.hypot(dx, dy);
-          if (d < 110) {
-            ctx.strokeStyle = light
-              ? `rgba(7,158,114,${0.07 * (1 - d / 110)})`
-              : `rgba(32,227,162,${0.07 * (1 - d / 110)})`;
-            ctx.lineWidth = 0.5;
-            ctx.beginPath();
-            ctx.moveTo(ps[i].x, ps[i].y);
-            ctx.lineTo(ps[j].x, ps[j].y);
-            ctx.stroke();
-          }
-        }
-      requestAnimationFrame(draw);
-    }
-    addEventListener('resize', resize);
-    resize();
-    draw();
-  }
 })();
 
 setTimeout(() => {
