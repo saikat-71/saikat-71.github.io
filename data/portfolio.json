@@ -2,7 +2,7 @@
   "version": 5,
   "site": {
     "repo": "saikat-71/saikat-71.github.io",
-    "lastUpdated": "2026-10-28",
+    "lastUpdated": "2026-10-29",
     "name": "Md Sobahan Hasan Saikat",
     "url": "https://saikat-71.github.io/",
     "analytics": {
@@ -346,6 +346,45 @@
       "id": "exam-score-prediction-using-machine-learning-mvsnny92"
     },
     {
+      "title": "Touchline — Football League Manager",
+      "label": "Football League Management Platform",
+      "description": "A responsive web application for managing football leagues, player databases, team operations, auctions, transfers, fixtures, and standings with Supabase-powered authentication and data management.",
+      "overview": "Touchline — Football League Manager is a web-based platform designed to simplify football tournament and league management. It provides a centralized interface for managing player records, organizing teams, conducting player auctions, tracking transfers, and maintaining fixtures, match results, and league standings. The application features role-based access for administrators and users, along with a responsive interface for desktop, tablet, and mobile devices.",
+      "problem": "Managing a football tournament manually can make it difficult to maintain player records, organize squads, track auction activity, manage transfers, and keep standings updated. Scattered spreadsheets and manual record-keeping can also lead to inconsistent data and unnecessary administrative work.",
+      "solution": "Developed a centralized web application with a responsive dashboard, authentication, role-based administration, and database-backed league management. Supabase provides authentication and PostgreSQL data storage, while player import functionality supports bulk player registration from Excel or CSV files. Players can be imported as free agents without assigning team ownership, allowing administrators to organize teams and ownership separately.",
+      "tech": [
+        "Web Development",
+        "Supabase",
+        "PostgreSQL",
+        "Supabase Authentication",
+        "Row Level Security (RLS)",
+        "SheetJS",
+        "Web App Manifest",
+        "GitHub Pages"
+      ],
+      "role": "Personal Project / Full-Stack Web Application Development",
+      "category": "Web Application, Sports Management, Database Management",
+      "highlights": [
+        "Responsive dashboard for desktop, tablet, and mobile devices.",
+        "Supabase authentication with administrator and user roles.",
+        "Player database management with bulk Excel/CSV import support.",
+        "Player-only import workflow with free-agent status and no team ownership assignment.",
+        "Team and squad management capabilities.",
+        "Football player auction and bidding workflow.",
+        "Player transfer management.",
+        "Fixture scheduling, match results, and league standings.",
+        "Administrative tools for account management and league operations.",
+        "Touchline branding with mobile Home Screen icon support.",
+        "GitHub Pages deployment for public web access."
+      ],
+      "repo": "https://github.com/saikat-71/Football-League-Manager",
+      "liveUrl": "https://saikat-71.github.io/Football-League-Manager/",
+      "report": "",
+      "cover": "images/projects/football-league-manager-football-league-manager.jpg",
+      "featured": false,
+      "id": "football-league-manager-mvpe5m9w"
+    },
+    {
       "title": "Movie Management System",
       "label": "JAVA PROJECT",
       "description": "A Java-based desktop movie management application with user registration, authentication, movie search, purchase, wallet, and movie management features.",
@@ -471,64 +510,6 @@
       "liveUrl": ""
     },
     {
-      "title": "Delivery Management System",
-      "label": "SRS/Pickers",
-      "description": "A desktop-based Windows Form application designed to streamline, automate, and centralize delivery operations among admins, employees, sellers, carriers, and customers.",
-      "overview": "The Delivery Management System provides a secure, role-based platform that replaces manual paper-based processes and fragmented spreadsheets. By centralizing shipment creation, carrier assignment, route management, payment verification, and real-time package tracking, the application connects all key stakeholders in a unified workflow to increase operational efficiency and user satisfaction.",
-      "problem": "Small and medium-sized businesses frequently rely on manual methods (paper records, phone calls, spread sheets) to manage logistics, leading to human errors, misplaced delivery documents, inaccurate updates, delayed payments, and confused multi-user communication.",
-      "solution": "A role-based desktop management platform utilizing a centralized database where each user type (Admin, Employee, Seller, Carrier, Customer) gets a personalized dashboard to manage shipments, track statuses, handle payments, and resolve complaints efficiently. The software development follows the Extreme Programming (XP) Agile model to accommodate requirement changes and support continuous feedback through iterative release cycles.",
-      "tech": [
-        "Framework",
-        "Design & Prototyping",
-        "Database & Storage",
-        "Version Control & Collaboration"
-      ],
-      "role": "Desktop Application SRS, Architecture Design & Software Testing",
-      "category": "Logistics, Supply Chain & Delivery Management System ",
-      "highlights": [
-        "Built as a Windows Form desktop application following the Extreme Programming (XP) Agile methodology.",
-        "Implements Role-Based Access Control (RBAC) across 5 distinct user roles (Admin, Employee, Seller, Carrier, Customer).",
-        "Provides real-time shipment status tracking and instant automated customer notifications.",
-        "Streamlines daily operations with carrier auto-assignment, delivery route management, and payment verification.",
-        "Includes a fully trace-mapped SRS, requirements matrix, UML diagrams (Use Case, Class, Activity), and Git workflow logs.",
-        "Validated through 30 executed black-box test cases covering authentication, UI functionality, edge inputs, and role permissions."
-      ],
-      "repo": "https://github.com/saikat-71/Delivery-Management-System.git",
-      "report": "documents/Delivery_Management_System.pdf",
-      "cover": "images/projects/Delivery-Management-System.webp",
-      "featured": false,
-      "id": "ml",
-      "liveUrl": ""
-    },
-    {
-      "title": "Football League Manager",
-      "label": "Sports Management System",
-      "description": "An interactive web dashboard for managing football leagues, tracking club standings, fixtures, player statistics, and match results in real time.",
-      "overview": "Football League Manager is a lightweight frontend web platform engineered to simplify tournament administration. It enables league organizers, coaches, and sports fans to easily browse team statistics, track match schedules, seed league datasets, and monitor dynamic league tables.",
-      "problem": "Managing sports leagues manually via spreadsheets or physical charts is inefficient, prone to calculation errors in goal dynamics/points, and difficult to share interactively with participants or fans.",
-      "solution": "Built a responsive, zero-overhead browser interface powered by structured JSON data models and JavaScript data-seeding routines. It automates league table updates, team performance metrics, and matchday tracking in an intuitive web dashboard.",
-      "tech": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "JSON Data Architecture"
-      ],
-      "role": "Personal Project",
-      "category": "Web Development / Sports & Data Management",
-      "highlights": [
-        "Dynamic Data Seeding: Integrates custom JavaScript routines to quickly reset, populate, and sync team data dynamically.",
-        "Real-time Standings & Analytics: Automatically computes points, goal differences, and league rankings based on structured JSON match data.",
-        "Responsive Dashboard UI: Clean, intuitive user interface tailored for seamless access across mobile devices and desktop screens.",
-        "Modular Code Structure: Cleanly decoupled frontend components (index.html), mock databases (league.json), and seed scripts (seed.js) for easy maintenance and expansion."
-      ],
-      "repo": "https://github.com/saikat-71/Football-League-Manager.git",
-      "liveUrl": "https://saikat-71.github.io/Football-League-Manager/",
-      "report": "",
-      "cover": "images/projects/football-league-manager-football-league-manager.jpg",
-      "featured": false,
-      "id": "football-league-manager-mvpe5m9w"
-    },
-    {
       "title": "Mini ATM Booth Simulator",
       "label": "ATM Simulator",
       "description": "A Python ATM simulator with a realistic booth-style web interface for basic banking operations.",
@@ -561,6 +542,36 @@
       "cover": "images/projects/mini-atm-booth-simulator-mini-atm-booth.webp",
       "featured": false,
       "id": "mini-atm-booth-simulator-mvspftwb"
+    },
+    {
+      "title": "Delivery Management System",
+      "label": "SRS/Pickers",
+      "description": "A desktop-based Windows Form application designed to streamline, automate, and centralize delivery operations among admins, employees, sellers, carriers, and customers.",
+      "overview": "The Delivery Management System provides a secure, role-based platform that replaces manual paper-based processes and fragmented spreadsheets. By centralizing shipment creation, carrier assignment, route management, payment verification, and real-time package tracking, the application connects all key stakeholders in a unified workflow to increase operational efficiency and user satisfaction.",
+      "problem": "Small and medium-sized businesses frequently rely on manual methods (paper records, phone calls, spread sheets) to manage logistics, leading to human errors, misplaced delivery documents, inaccurate updates, delayed payments, and confused multi-user communication.",
+      "solution": "A role-based desktop management platform utilizing a centralized database where each user type (Admin, Employee, Seller, Carrier, Customer) gets a personalized dashboard to manage shipments, track statuses, handle payments, and resolve complaints efficiently. The software development follows the Extreme Programming (XP) Agile model to accommodate requirement changes and support continuous feedback through iterative release cycles.",
+      "tech": [
+        "Framework",
+        "Design & Prototyping",
+        "Database & Storage",
+        "Version Control & Collaboration"
+      ],
+      "role": "Desktop Application SRS, Architecture Design & Software Testing",
+      "category": "Logistics, Supply Chain & Delivery Management System ",
+      "highlights": [
+        "Built as a Windows Form desktop application following the Extreme Programming (XP) Agile methodology.",
+        "Implements Role-Based Access Control (RBAC) across 5 distinct user roles (Admin, Employee, Seller, Carrier, Customer).",
+        "Provides real-time shipment status tracking and instant automated customer notifications.",
+        "Streamlines daily operations with carrier auto-assignment, delivery route management, and payment verification.",
+        "Includes a fully trace-mapped SRS, requirements matrix, UML diagrams (Use Case, Class, Activity), and Git workflow logs.",
+        "Validated through 30 executed black-box test cases covering authentication, UI functionality, edge inputs, and role permissions."
+      ],
+      "repo": "https://github.com/saikat-71/Delivery-Management-System.git",
+      "report": "documents/Delivery_Management_System.pdf",
+      "cover": "images/projects/Delivery-Management-System.webp",
+      "featured": false,
+      "id": "ml",
+      "liveUrl": ""
     }
   ],
   "experience": [
